@@ -1,0 +1,70 @@
+/******** THIS IS THE MAIN SCSS. THIS IMPORTS ALL SCSS FILES AND WILL COMPILE TO THE MAIN.CSS ********/
+/*******************************
+    Variables
+********************************/
+@import "variables";
+
+/*******************************
+    Bootstrap
+********************************/
+@import "bootstrap/normalize", "bootstrap/variables", "bootstrap/mixins", "bootstrap/grid", "bootstrap/media", "bootstrap/images", "bootstrap/nav", "bootstrap/navbar";
+
+/*******************************
+   Defaults
+********************************/
+@import "defaults";
+
+/*******************************
+    Mixins
+********************************/
+@import "mixins";
+
+/*******************************
+    Header Styles
+********************************/
+@import "header";
+
+/*******************************
+    Header Content Styles
+********************************/
+@import "sections/header-content";
+
+/*******************************
+    Navigation Styles
+********************************/
+@import "navigation";
+
+/*******************************
+    Footer Styles
+********************************/
+@import "footer";
+
+/*******************************
+    Rock Star Styles
+********************************/
+@import "sections/rock-star";
+
+/*******************************
+    Cover Band Styles
+********************************/
+@import "sections/cover-band";
+
+/*******************************
+    Touring Act Styles
+********************************/
+@import "sections/touring-act";
+
+/*******************************
+    Producer Styles
+********************************/
+@import "sections/producer";
+
+/*******************************
+    Undiscovered Talent Styles
+********************************/
+@import "sections/undisc-talent";    
+
+/*******************************
+    DJ Styles
+********************************/
+@import "sections/dj";

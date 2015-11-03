@@ -1,0 +1,64 @@
+
+header {
+    width: 100%;
+    height: 65px;
+    margin: 0 auto;
+    padding: 0;
+    @include gradient ($from-color, $to-color);
+    
+    .mobile-logo {
+        width: 40%;
+        float: left;
+        margin-top: 4%;
+    }
+    .mobile-back {
+        float: right;
+        font-size: 1em;
+        padding-top: .5em;
+        a {
+            color: #eee;
+            text-decoration: none;
+        }
+    }
+}
+
+
+/* This is used to center the logo for full width */
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (min-width: 320px) and (max-width: 667px) {
+    .center {
+        display: none;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mobile-logo {
+        display: none;   
+    }
+    .center {
+        width: 200px;
+        float: none;
+        position: absolute;
+        left: 50%;
+        top: 0; 
+        margin-left: -150px;
+        margin-top: 8px;
+        display: block
+    }
+    .mobile-back {
+        display: none;   
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}

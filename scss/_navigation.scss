@@ -1,0 +1,48 @@
+
+.navigation {
+    margin: 0 auto;
+    padding: 0;
+    
+    .circle-wrapper {
+        width: 125px;
+        height: 125px;
+        margin: 1em;
+        position: relative;
+        float: left;   
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        margin: 1em;
+        border-radius: 50%;
+        float: left; 
+    }
+    /* Circle Colors */
+    .blue {
+        background: #496FB5   
+        }
+    .green {
+        background: #44A472;   
+    }
+    .purple {
+        background: #6F489C;   
+    }
+    .gold {
+        background: #F59120;   
+    }
+    .grey {
+        background: #58595B;   
+    }
+    .red {
+        background: #D23A45; 
+    }
+    .teal {
+        background: #57BF9E;    
+    }
+    /* End Circle Colors */
+    p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
