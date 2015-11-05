@@ -2,6 +2,8 @@
 /*******************************
     Variables
 ********************************/
+/** IMPORTED GOOGLE FONTS **/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 /* Font Colors */
 /* Font Family */
 /* Gradient to and from colors */
@@ -9,7 +11,6 @@
     Bootstrap
 ********************************/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700italic,800italic);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1308,7 +1309,6 @@ th {
 /*******************************
    Defaults
 ********************************/
-/** IMPORTED GOOGLE FONTS **/
 /** DEFAULT VALUES **/
 html,
 body {
@@ -1322,12 +1322,63 @@ body {
   position: relative; }
 
 .content {
+  width: 100%;
   padding-bottom: 100px;
   /* Height of the footer element */ }
 
 .clear {
   clear: both; }
 
+.borders {
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC; }
+
+h1 {
+  font-size: 1.45em;
+  margin: 1em auto 0;
+  padding: 0;
+  font-weight: 400; }
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  color: #496fb5; }
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  color: #496fb5; }
+
+.large-text {
+  font-size: .75em;
+  padding: .5em 1em;
+  color: #333;
+  text-align: center; }
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 4em;
+    margin: 1em auto 0;
+    padding: 0;
+    font-weight: 400; }
+
+  h2 {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    margin: 1.5em auto 1em;
+    padding: 0;
+    color: #496fb5; }
+
+  .large-text {
+    font-size: 1.53em;
+    color: #333; } }
 /*******************************
     Mixins
 ********************************/
@@ -1393,44 +1444,79 @@ header {
 /*******************************
     Navigation Styles
 ********************************/
-.navigation {
+/* .navigation {
+    margin: 0 auto;
+    padding: 0;
+
+    .circle-wrapper {
+        width: 135px;
+        height: 135px;
+        margin: 1em 1em;
+        position: relative;
+        float: left;   
+    }
+    .circle {
+        width: 115px;
+        height: 115px;
+        margin: 1em;
+        border-radius: 50%;
+        float: left;
+    }
+    /* Circle Colors 
+    .blue {
+        width: 100px;
+        height: 100px;
+        
+        }
+    .green {
+        background: #44A472;   
+    }
+    .purple {
+        background: #6F489C;   
+    }
+    .gold {
+        background: #F59120;   
+    }
+    .grey {
+        background: #58595B;   
+    }
+    .red {
+        background: #D23A45; 
+    }
+    .teal {
+        background: #57BF9E;    
+    }
+    /* End Circle Colors  
+    p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+} */
+.mobile-nav {
+  width: 75%;
+  height: 200px;
   margin: 0 auto;
   padding: 0;
-  /* Circle Colors */
-  /* End Circle Colors */ }
-  .navigation .circle-wrapper {
-    width: 135px;
-    height: 135px;
-    margin: 1em;
-    position: relative;
-    float: left; }
-  .navigation .circle {
-    width: 115px;
-    height: 115px;
-    margin: 1em;
-    border-radius: 50%;
-    float: left; }
-    .navigation .circle:hover {
-      background: #333; }
-  .navigation .blue {
-    background: #496FB5; }
-  .navigation .green {
-    background: #44A472; }
-  .navigation .purple {
-    background: #6F489C; }
-  .navigation .gold {
-    background: #F59120; }
-  .navigation .grey {
-    background: #58595B; }
-  .navigation .red {
-    background: #D23A45; }
-  .navigation .teal {
-    background: #57BF9E; }
-  .navigation p {
-    position: absolute;
-    left: 0;
-    bottom: 0; }
+  background: url(../images/mobile-nav.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
+.navigation {
+  display: none; }
+
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none; }
+
+  .navigation {
+    width: 1150px;
+    height: 161px;
+    display: block;
+    margin: 10px auto 0;
+    padding: 0;
+    background: url(../images/navigation.gif) 0 0; } }
 /*******************************
     Footer Styles
 ********************************/
@@ -1503,6 +1589,37 @@ footer {
 /*******************************
     Rock Star Styles
 ********************************/
+/* Banner Image */
+.banner-wrapper {
+  width: 100%;
+  margin: 0 auto; }
+  .banner-wrapper img {
+    width: 100%; }
+
+.full-image {
+  float: none; }
+  .full-image img {
+    width: 100%; }
+  .full-image p {
+    text-align: center;
+    margin: .25 auto 1em;
+    padding: 0; }
+
+@media (min-width: 992px) {
+  .banner-wrapper {
+    margin-top: 5em; }
+
+  .full-image {
+    float: left;
+    width: 30%;
+    margin: 0 auto; }
+    .full-image img {
+      width: 100%; }
+    .full-image p {
+      text-align: center;
+      margin: 0 auto;
+      padding: .25em 0 2em 0;
+      font-size: 1.15em; } }
 /*******************************
     Cover Band Styles
 ********************************/

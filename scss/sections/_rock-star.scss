@@ -1,0 +1,46 @@
+/* Banner Image */
+.banner-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    img {
+        width: 100%;    
+    }
+}
+
+.full-image {
+    float: none;
+    
+    img {
+            width: 100%;    
+        }
+    
+    p {
+        text-align: center;
+        margin: .25 auto 1em;
+        padding: 0;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .banner-wrapper {
+        margin-top: 5em;
+    }
+    
+    .full-image {
+        float: left;
+        width: 30%;
+        margin: 0 auto;
+        
+        img {
+            width: 100%;    
+        }
+        p {
+            text-align: center;
+            margin: 0 auto;
+            padding: .25em 0 2em 0;
+            font-size: 1.15em;
+        }
+    }
+}
