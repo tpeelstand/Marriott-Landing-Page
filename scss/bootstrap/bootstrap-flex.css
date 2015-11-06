@@ -1,0 +1,30 @@
+/*
+Sass::SyntaxError: ".col-xs-1" failed to @extend "%grid-column-float-xs".
+The selector "%grid-column-float-xs" was not found.
+Use "@extend %grid-column-float-xs !optional" if the extend should be able to fail.
+
+
+Backtrace:
+C:/wamp/www/WebDevelopment/9-YesMail/Marriott-Landing-Page/scss/bootstrap/mixins/_grid-framework.scss:33
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/extend.rb:61:in `block in check_extends_fired!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util/subset_map.rb:106:in `block in each_value'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util/subset_map.rb:106:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util/subset_map.rb:106:in `each_value'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/extend.rb:50:in `check_extends_fired!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/extend.rb:16:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:39:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \".col-xs-1\" failed to @extend \"%grid-column-float-xs\".\A The selector \"%grid-column-float-xs\" was not found.\A Use \"@extend %grid-column-float-xs !optional\" if the extend should be able to fail.\A "; }

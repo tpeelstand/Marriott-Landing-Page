@@ -16,10 +16,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- jQuery CDN Link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Smooth Scrolling Script for Navigation -->
-    <script src="js/smooth-scroll.js"></script>  
+      
     <!-- ANGULARJS CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <!-- Custom Stylesheet for landing page -->
@@ -43,7 +40,43 @@
             <!-- Content directly below the header -->
             <div data-ng-include="'partials/header-content.html'"></div>
             <!-- / End -->
-  
+
+            <!-- INCLUDED NAVIGATION IN INDEX OTHERWISE SMOOTH SCROLLING EFFECT WOULD NOT WORK -->
+            <div class="container">
+                <!-- Full navigation -->
+                <div class="row">  
+                     <!-- Start Navigation -->
+                    <div id="nav-wrap">
+                        <div id="all">
+                            <ul>
+                                <li><a class="blue" href="#rock-star">
+                                    <span>Rock Star</span>
+                                    </a>
+                                </li>
+                                <li><a class="green" href="#"><span>Cover Band</span></a></li>
+                                <li><a class="purple" href="#"><span>Touring Act</span></a></li>
+                                <li><a class="gold" href="#"><span>Karaoke Star</span></a></li>
+                                <li><a class="grey" href="#"><span>Producer</span></a></li>
+                                <li><a class="red" href="#"><span>Undiscovered Talent</span></a></li>
+                                <li><a class="teal" href="#"><span>DJ</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navgation -->
+                </div>
+            </div>
+            <!-- Sticky Navigation -->
+            
+            <!-- <div id="" class="">
+                 Stick nav to go here 
+            </div> -->
+            
+            <!-- Mobile Navigation 
+            <div class="row"> 
+                <div class="mobile-nav" style="width: 95%; margin: 0 auto;padding: 0;border: 1px solid #333;">
+                    <img src="images/mobile-nav.gif" at="mobile navigation" style="width: 80%;margin: 1em 0 1em 5%; padding: 0;">
+                </div>
+          </div>-->  
             <!-- Rock Star Section - refer to rock-star.html for all html code or rock-star.scss for styles -->
             <div data-ng-include="'partials/rock-star.html'"></div> 
             <!-- / End Rock Star -->
@@ -64,6 +97,8 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Smooth Scrolling Script for Navigation -->
+    <script src="js/smooth-scroll.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
       
