@@ -41,18 +41,16 @@
             <div data-ng-include="'partials/header-content.html'"></div>
             <!-- / End -->
 
-            <!-- INCLUDED NAVIGATION IN INDEX OTHERWISE SMOOTH SCROLLING EFFECT WOULD NOT WORK -->
-            <div class="container">
+        <!-- INCLUDED NAVIGATION IN INDEX OTHERWISE SMOOTH SCROLLING EFFECT WOULD NOT WORK -->
+            
+            <div class="container nav-full">
                 <!-- Full navigation -->
                 <div class="row">  
                      <!-- Start Navigation -->
                     <div id="nav-wrap">
                         <div id="all">
                             <ul>
-                                <li><a class="blue" href="#rock-star">
-                                    <span>Rock Star</span>
-                                    </a>
-                                </li>
+                                <li><a class="blue" href="#rock-star"><span>Rock Star</span></a></li>
                                 <li><a class="green" href="#"><span>Cover Band</span></a></li>
                                 <li><a class="purple" href="#"><span>Touring Act</span></a></li>
                                 <li><a class="gold" href="#"><span>Karaoke Star</span></a></li>
@@ -71,12 +69,29 @@
                  Stick nav to go here 
             </div> -->
             
-            <!-- Mobile Navigation 
-            <div class="row"> 
-                <div class="mobile-nav" style="width: 95%; margin: 0 auto;padding: 0;border: 1px solid #333;">
-                    <img src="images/mobile-nav.gif" at="mobile navigation" style="width: 80%;margin: 1em 0 1em 5%; padding: 0;">
-                </div>
-          </div>-->  
+            <!-- Mobile Navigation -->
+            <div class="container">
+                <div class="row"> 
+                    <div id="mobile-nav-wrap">
+                        <div id="all-mobile">
+                            <ul>
+                                <li><a class="blue" href="#rock-star"><span>Rock<br>Star</span></a></li>
+                                <li><a class="green" href="#"><span>Cover<br>Band</span></a></li>
+                                <li><a class="purple" href="#"><span>Touring <br>Act</span></a></li>
+                                <li><a class="gold" href="#"><span>Karaoke<br>Star</span></a></li>
+                                <div class="clear"></div>
+                                <br><br>
+                                <li class="second-row"><a class="grey" href="#"><span>Producer</span></a></li>
+                                <li><a class="red" href="#"><span>Undiscovered<br>Talent</span></a></li>
+                                <li><a class="teal" href="#"><span>DJ</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+              </div>
+         </div>
+            
+        <!-- ***** / NAVIGATION ***** -->
+            
             <!-- Rock Star Section - refer to rock-star.html for all html code or rock-star.scss for styles -->
             <div data-ng-include="'partials/rock-star.html'"></div> 
             <!-- / End Rock Star -->
