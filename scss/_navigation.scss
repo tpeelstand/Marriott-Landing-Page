@@ -1,18 +1,36 @@
+#nav-wrap {
+    display: none;
+}
+
 // Computer display //
 @media (min-width: 992px) { 
     .mobile-nav {
         display: none;   
     }
     
-#nav-wrapper {
+#nav-wrap {
     width: 100%;
+    display: block;
     margin: 0 auto;
     padding: 0;
 }
 #all > ul { 
     list-style: none;
     margin: 0 auto;
-    padding: 0 10px 0 0; 
+    padding: 0 10px 0 0;
+    height: 13em;
+    position: relative;
+    
+    li {
+        width: 100px;
+        height: 100px;
+        float: left;
+        display: block; 
+        padding: 10px;
+        margin: 1em 1.45em;
+        border-radius: 50%;
+        text-align: center;
+    }
 }
 #all a { 
     text-decoration: none; 
@@ -23,7 +41,6 @@
     padding: 10px;
     margin: 1em 1.45em;
     border-radius: 50%;
-    color: white; 
     text-align: center;
 
     -webkit-transition: all 0.2s ease;
@@ -36,6 +53,7 @@
 #all:hover ul:hover a {
     opacity: 0.5;
     background: #999;
+    color: #999;
 }
 #all:hover ul:hover a:hover {
     opacity: 1;
@@ -43,47 +61,128 @@
     
 /* Circle Colors */
 .blue {
-    background: #496fb5;
-    
+    background-color: #496fb5;
+    background-image: url(../images/navigation.gif)  !important;
+    color: #496fb5;
+    font-weight: bold;
     &:hover {
-        background: #496fb5 !important;   
+        background-color: #496fb5 !important;
+        color: #496fb5 !important;
+    }
+    
+    span {
+        position: absolute;
+        bottom: 1em;
+        left: 5em;    
     }
 }
 .green {
-    background: #44A472;
+    background-color: #44A472;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -173px 0 !important;
+    color: #44A472;
+    font-weight: bold;
         &:hover {
-            background: #44A472 !important;   
+            background: #44A472 !important;
+            background-image: url(../images/navigation.gif) !important;
+            background-position: -173px 0 !important;
+            color: #44A472 !important;
         }
+     span {
+        position: absolute;
+        bottom: 1em;
+        left: 14.75em;    
+    }
 }
 .purple {
-    background: #6F489C;
+    background-color: #6F489C;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -345px 0 !important;
+    color: #6F489C;
+    font-weight: bold;
         &:hover {
-            background: #6F489C !important;   
-    }   
+            background-color: #6F489C !important;
+            background-image: url(../images/navigation.gif) !important;
+            background-position: -345px 0 !important;
+            color: #6F489C !important;
+    } 
+     span {
+        position: absolute;
+        bottom: 1em;
+        left: 25.25em;    
+    }
 }
 .gold {
-    background: #F59120;
+    background-color: #F59120;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -516px 0 !important;
+    color: #F59120;
+    font-weight: bold;
         &:hover {
-            background: #F59120 !important;   
+            background-color: #F59120 !important;
+            background-image: url(../images/navigation.gif) !important;
+            background-position: -516px 0 !important;
+            color: #F59120 !important;
         }
+     span {
+        position: absolute;
+        bottom: 1em;
+        left: 35.5em;    
+    }
 }
 .grey {
-    background: #58595B;
+    background-color: #58595B;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -687px 0 !important;
+    color: #58595B;
+    font-weight: bold;
         &:hover {
-            background: #58595B !important;   
+            background-color: #58595B !important;
+            background-image: url(../images/navigation.gif) !important;
+            background-position: -687px 0 !important;
+            color: #58595B !important;
         }
+     span {
+        position: absolute;
+        bottom: 1em;
+        right: 23em;    
+    }
 }
 .red {
-    background: #D23A45;
+    background-color: #D23A45;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -858px 0 !important;
+    color: #D23A45;
+    font-weight: bold;
         &:hover {
-            background: #D23A45 !important;   
+            background-color: #D23A45 !important;
+            background-image: url(../images/navigation.gif) !important;
+            background-position: -858px 0 !important;
+            color: #D23A45 !important;
         }
+     span {
+        position: absolute;
+        bottom: 1em;
+        right: 9.75em;    
+    }
 }
 .teal {
-    background: #57BF9E;
+    background-color: #57BF9E;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -1030px 0 !important;
+    color: #57BF9E;
+    font-weight: bold;
         &:hover {
-            background: #57BF9E !important;   
+            background: #57BF9E !important;
+            background-image: url(../images/navigation.gif) !important;
+            background-position: -1030px 0 !important;
+            color: #57BF9E !important;
         }
+     span {
+        position: absolute;
+        bottom: 1em;
+        right: 3.75em;    
+    }
 }
 /* End Circle Colors */  
 }

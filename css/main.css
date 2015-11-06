@@ -1403,13 +1403,9 @@ header {
     width: 40%;
     float: left;
     margin-top: 4%; }
-  header .mobile-back {
-    float: right;
-    font-size: 1em;
-    padding-top: .5em; }
-    header .mobile-back a {
-      color: #eee;
-      text-decoration: none; }
+  header .mobile-back a {
+    color: #eee;
+    text-decoration: none; }
 
 /* This is used to center the logo for full width */
 /* Extra small devices (phones, less than 768px) */
@@ -1422,15 +1418,21 @@ header {
   .mobile-logo {
     display: none; }
 
-  .center {
-    width: 200px;
-    float: none;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    margin-left: -150px;
-    margin-top: 8px;
-    display: block; }
+  .logo-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; }
+    .logo-container i {
+      float: right; }
+    .logo-container .center {
+      width: 200px;
+      float: none;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin-left: -150px;
+      margin-top: 8px;
+      display: block; }
 
   .mobile-back {
     display: none; } }
@@ -1444,19 +1446,34 @@ header {
 /*******************************
     Navigation Styles
 ********************************/
+#nav-wrap {
+  display: none; }
+
 @media (min-width: 992px) {
   .mobile-nav {
     display: none; }
 
-  #nav-wrapper {
+  #nav-wrap {
     width: 100%;
+    display: block;
     margin: 0 auto;
     padding: 0; }
 
   #all > ul {
     list-style: none;
     margin: 0 auto;
-    padding: 0 10px 0 0; }
+    padding: 0 10px 0 0;
+    height: 13em;
+    position: relative; }
+    #all > ul li {
+      width: 100px;
+      height: 100px;
+      float: left;
+      display: block;
+      padding: 10px;
+      margin: 1em 1.45em;
+      border-radius: 50%;
+      text-align: center; }
 
   #all a {
     text-decoration: none;
@@ -1467,7 +1484,6 @@ header {
     padding: 10px;
     margin: 1em 1.45em;
     border-radius: 50%;
-    color: white;
     text-align: center;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -1478,46 +1494,121 @@ header {
 
   #all:hover ul:hover a {
     opacity: 0.5;
-    background: #999; }
+    background: #999;
+    color: #999; }
 
   #all:hover ul:hover a:hover {
     opacity: 1; }
 
   /* Circle Colors */
   .blue {
-    background: #496fb5; }
+    background-color: #496fb5;
+    background-image: url(../images/navigation.gif) !important;
+    color: #496fb5;
+    font-weight: bold; }
     .blue:hover {
-      background: #496fb5 !important; }
+      background-color: #496fb5 !important;
+      color: #496fb5 !important; }
+    .blue span {
+      position: absolute;
+      bottom: 1em;
+      left: 5em; }
 
   .green {
-    background: #44A472; }
+    background-color: #44A472;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -173px 0 !important;
+    color: #44A472;
+    font-weight: bold; }
     .green:hover {
-      background: #44A472 !important; }
+      background: #44A472 !important;
+      background-image: url(../images/navigation.gif) !important;
+      background-position: -173px 0 !important;
+      color: #44A472 !important; }
+    .green span {
+      position: absolute;
+      bottom: 1em;
+      left: 14.75em; }
 
   .purple {
-    background: #6F489C; }
+    background-color: #6F489C;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -345px 0 !important;
+    color: #6F489C;
+    font-weight: bold; }
     .purple:hover {
-      background: #6F489C !important; }
+      background-color: #6F489C !important;
+      background-image: url(../images/navigation.gif) !important;
+      background-position: -345px 0 !important;
+      color: #6F489C !important; }
+    .purple span {
+      position: absolute;
+      bottom: 1em;
+      left: 25.25em; }
 
   .gold {
-    background: #F59120; }
+    background-color: #F59120;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -516px 0 !important;
+    color: #F59120;
+    font-weight: bold; }
     .gold:hover {
-      background: #F59120 !important; }
+      background-color: #F59120 !important;
+      background-image: url(../images/navigation.gif) !important;
+      background-position: -516px 0 !important;
+      color: #F59120 !important; }
+    .gold span {
+      position: absolute;
+      bottom: 1em;
+      left: 35.5em; }
 
   .grey {
-    background: #58595B; }
+    background-color: #58595B;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -687px 0 !important;
+    color: #58595B;
+    font-weight: bold; }
     .grey:hover {
-      background: #58595B !important; }
+      background-color: #58595B !important;
+      background-image: url(../images/navigation.gif) !important;
+      background-position: -687px 0 !important;
+      color: #58595B !important; }
+    .grey span {
+      position: absolute;
+      bottom: 1em;
+      right: 23em; }
 
   .red {
-    background: #D23A45; }
+    background-color: #D23A45;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -858px 0 !important;
+    color: #D23A45;
+    font-weight: bold; }
     .red:hover {
-      background: #D23A45 !important; }
+      background-color: #D23A45 !important;
+      background-image: url(../images/navigation.gif) !important;
+      background-position: -858px 0 !important;
+      color: #D23A45 !important; }
+    .red span {
+      position: absolute;
+      bottom: 1em;
+      right: 9.75em; }
 
   .teal {
-    background: #57BF9E; }
+    background-color: #57BF9E;
+    background-image: url(../images/navigation.gif) !important;
+    background-position: -1030px 0 !important;
+    color: #57BF9E;
+    font-weight: bold; }
     .teal:hover {
-      background: #57BF9E !important; }
+      background: #57BF9E !important;
+      background-image: url(../images/navigation.gif) !important;
+      background-position: -1030px 0 !important;
+      color: #57BF9E !important; }
+    .teal span {
+      position: absolute;
+      bottom: 1em;
+      right: 3.75em; }
 
   /* End Circle Colors */ }
 /*******************************

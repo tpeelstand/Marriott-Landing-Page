@@ -12,9 +12,7 @@ header {
         margin-top: 4%;
     }
     .mobile-back {
-        float: right;
-        font-size: 1em;
-        padding-top: .5em;
+        
         a {
             color: #eee;
             text-decoration: none;
@@ -43,15 +41,24 @@ header {
     .mobile-logo {
         display: none;   
     }
-    .center {
-        width: 200px;
-        float: none;
-        position: absolute;
-        left: 50%;
-        top: 0; 
-        margin-left: -150px;
-        margin-top: 8px;
-        display: block
+    .logo-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        
+        i {
+            float: right;    
+        }
+        .center {
+            width: 200px;
+            float: none;
+            position: absolute;
+            left: 50%;
+            top: 0; 
+            margin-left: -150px;
+            margin-top: 8px;
+            display: block
+        }
     }
     .mobile-back {
         display: none;   
