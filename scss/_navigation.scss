@@ -3,62 +3,87 @@
     .mobile-nav {
         display: none;   
     }
-    .full-nav {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-        
-        ul {
-            list-style-type: none;
-            
-            li {
-                float: left;
-                padding: .5em;
-                margin: 1em 1.25em;
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                
-                a {
-                    padding: .5em;
-                    margin: 1em 1.25em;
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%;   
-                }
-            }
-            
-            &:hover li {
-                padding: .5em;
-                    margin: 1em 1.25em;
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%; 
-               background: #999;    
-            }
-            /* Circle Colors */
-            .blue {
-                background: #496fb5;
-            }
-            .green {
-                background: #44A472;   
-            }
-            .purple {
-                background: #6F489C;   
-            }
-            .gold {
-                background: #F59120;   
-            }
-            .grey {
-                background: #58595B;   
-            }
-            .red {
-                background: #D23A45; 
-            }
-            .teal {
-                background: #57BF9E;    
-            }
-            /* End Circle Colors */ 
-        }
+    
+#nav-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+#all > ul { 
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 10px 0 0; 
+}
+#all a { 
+    text-decoration: none; 
+    width: 100px;
+    height: 100px;
+    float: left;
+    display: block; 
+    padding: 10px;
+    margin: 1em 1.45em;
+    border-radius: 50%;
+    color: white; 
+    text-align: center;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+#all:hover a {
+    opacity: 0.2;
+}
+#all:hover ul:hover a {
+    opacity: 0.5;
+    background: #999;
+}
+#all:hover ul:hover a:hover {
+    opacity: 1;
+}
+    
+/* Circle Colors */
+.blue {
+    background: #496fb5;
+    
+    &:hover {
+        background: #496fb5 !important;   
     }
+}
+.green {
+    background: #44A472;
+        &:hover {
+            background: #44A472 !important;   
+        }
+}
+.purple {
+    background: #6F489C;
+        &:hover {
+            background: #6F489C !important;   
+    }   
+}
+.gold {
+    background: #F59120;
+        &:hover {
+            background: #F59120 !important;   
+        }
+}
+.grey {
+    background: #58595B;
+        &:hover {
+            background: #58595B !important;   
+        }
+}
+.red {
+    background: #D23A45;
+        &:hover {
+            background: #D23A45 !important;   
+        }
+}
+.teal {
+    background: #57BF9E;
+        &:hover {
+            background: #57BF9E !important;   
+        }
+}
+/* End Circle Colors */  
 }

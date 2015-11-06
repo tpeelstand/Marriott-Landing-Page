@@ -7,17 +7,22 @@
     }
 }
 
-.full-image {
-    float: none;
+.travelers-wrapper {
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0;
     
-    img {
+    .image-row {
+
+        img {
             width: 100%;    
+            }
+
+        p {
+            text-align: center;
+            margin: 0 auto 1em;
+            padding: 0;
         }
-    
-    p {
-        text-align: center;
-        margin: .25 auto 1em;
-        padding: 0;
     }
 }
 .message-wrapper {
@@ -42,24 +47,96 @@
     }
 }
 
+/* Mobile images with city and map at bottom of section */
+.image-wrapper {
+    width: 100%;
+    margin: 1em auto 0;
+    padding: 0;
+    
+    .full-top {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .bottom-left {
+        width: 49%; 
+        float: left;    
+    }
+    .bottom-right {
+        width: 49%; 
+        float: right;    
+    }
+}
+.bottom {
+    margin: 0 auto 1em;
+}
+
+.inline-images {
+    display: none;
+}
+
+
+/** FULL WIDTH VIEW MEDIA QUERY **/
+
 @media (min-width: 992px) {
     .banner-wrapper {
         margin-top: 5em;
     }
+
+    /* Images below banner */
+.travelers-wrapper {
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0;
     
-    .full-image {
+    .image-row {
+        width: 32%;
         float: left;
-        width: 30%;
-        margin: 0 auto;
+        margin: 0 auto; 
+        padding: 0;
         
         img {
             width: 100%;    
-        }
+            }
+
         p {
-            text-align: center;
+            text-align: center;    
+        }
+    }
+    .middle {
+        margin: 0 1em;    
+    }
+}
+    
+    .mobile-images { /** 3 images at bottom with map **/
+        display: none;   
+    }
+    
+    /* Full width images below slideshow */
+    .inline-images {
+        display: block;
+        width: 100%;
+        margin: .25em 0 1em 0;
+        padding: 0; 
+        
+        .image-side-wrapper {
+            padding: 0;
             margin: 0 auto;
-            padding: .25em 0 2em 0;
-            font-size: 1.15em;
+            width: 24%;
+            > img {
+                float: left;
+                width: 100%;    
+            }
+        }
+        .image-mid-wrapper {
+            padding: 0;
+            margin: 0 .7em;
+            width: 50.1%; 
+            > img {
+                float: left; 
+                margin: 0 auto;
+                width: 100%;   
+            }
         }
     }
 }

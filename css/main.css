@@ -1448,48 +1448,78 @@ header {
   .mobile-nav {
     display: none; }
 
-  .full-nav {
+  #nav-wrapper {
     width: 100%;
     margin: 0 auto;
     padding: 0; }
-    .full-nav ul {
-      list-style-type: none;
-      /* Circle Colors */
-      /* End Circle Colors */ }
-      .full-nav ul li {
-        float: left;
-        padding: .5em;
-        margin: 1em 1.25em;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%; }
-        .full-nav ul li a {
-          padding: .5em;
-          margin: 1em 1.25em;
-          width: 100px;
-          height: 100px;
-          border-radius: 50%; }
-      .full-nav ul:hover li {
-        padding: .5em;
-        margin: 1em 1.25em;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: #999; }
-      .full-nav ul .blue {
-        background: #496fb5; }
-      .full-nav ul .green {
-        background: #44A472; }
-      .full-nav ul .purple {
-        background: #6F489C; }
-      .full-nav ul .gold {
-        background: #F59120; }
-      .full-nav ul .grey {
-        background: #58595B; }
-      .full-nav ul .red {
-        background: #D23A45; }
-      .full-nav ul .teal {
-        background: #57BF9E; } }
+
+  #all > ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 10px 0 0; }
+
+  #all a {
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    float: left;
+    display: block;
+    padding: 10px;
+    margin: 1em 1.45em;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease; }
+
+  #all:hover a {
+    opacity: 0.2; }
+
+  #all:hover ul:hover a {
+    opacity: 0.5;
+    background: #999; }
+
+  #all:hover ul:hover a:hover {
+    opacity: 1; }
+
+  /* Circle Colors */
+  .blue {
+    background: #496fb5; }
+    .blue:hover {
+      background: #496fb5 !important; }
+
+  .green {
+    background: #44A472; }
+    .green:hover {
+      background: #44A472 !important; }
+
+  .purple {
+    background: #6F489C; }
+    .purple:hover {
+      background: #6F489C !important; }
+
+  .gold {
+    background: #F59120; }
+    .gold:hover {
+      background: #F59120 !important; }
+
+  .grey {
+    background: #58595B; }
+    .grey:hover {
+      background: #58595B !important; }
+
+  .red {
+    background: #D23A45; }
+    .red:hover {
+      background: #D23A45 !important; }
+
+  .teal {
+    background: #57BF9E; }
+    .teal:hover {
+      background: #57BF9E !important; }
+
+  /* End Circle Colors */ }
 /*******************************
     Footer Styles
 ********************************/
@@ -1569,13 +1599,15 @@ footer {
   .banner-wrapper img {
     width: 100%; }
 
-.full-image {
-  float: none; }
-  .full-image img {
+.travelers-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+  .travelers-wrapper .image-row img {
     width: 100%; }
-  .full-image p {
+  .travelers-wrapper .image-row p {
     text-align: center;
-    margin: .25 auto 1em;
+    margin: 0 auto 1em;
     padding: 0; }
 
 .message-wrapper {
@@ -1598,21 +1630,75 @@ footer {
     top: 12px;
     left: 15px; }
 
+/* Mobile images with city and map at bottom of section */
+.image-wrapper {
+  width: 100%;
+  margin: 1em auto 0;
+  padding: 0; }
+  .image-wrapper .full-top {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; }
+  .image-wrapper .bottom-left {
+    width: 49%;
+    float: left; }
+  .image-wrapper .bottom-right {
+    width: 49%;
+    float: right; }
+
+.bottom {
+  margin: 0 auto 1em; }
+
+.inline-images {
+  display: none; }
+
+/** FULL WIDTH VIEW MEDIA QUERY **/
 @media (min-width: 992px) {
   .banner-wrapper {
     margin-top: 5em; }
 
-  .full-image {
-    float: left;
-    width: 30%;
-    margin: 0 auto; }
-    .full-image img {
-      width: 100%; }
-    .full-image p {
-      text-align: center;
+  /* Images below banner */
+  .travelers-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; }
+    .travelers-wrapper .image-row {
+      width: 32%;
+      float: left;
       margin: 0 auto;
-      padding: .25em 0 2em 0;
-      font-size: 1.15em; } }
+      padding: 0; }
+      .travelers-wrapper .image-row img {
+        width: 100%; }
+      .travelers-wrapper .image-row p {
+        text-align: center; }
+    .travelers-wrapper .middle {
+      margin: 0 1em; }
+
+  .mobile-images {
+    /** 3 images at bottom with map **/
+    display: none; }
+
+  /* Full width images below slideshow */
+  .inline-images {
+    display: block;
+    width: 100%;
+    margin: .25em 0 1em 0;
+    padding: 0; }
+    .inline-images .image-side-wrapper {
+      padding: 0;
+      margin: 0 auto;
+      width: 24%; }
+      .inline-images .image-side-wrapper > img {
+        float: left;
+        width: 100%; }
+    .inline-images .image-mid-wrapper {
+      padding: 0;
+      margin: 0 .7em;
+      width: 50.1%; }
+      .inline-images .image-mid-wrapper > img {
+        float: left;
+        margin: 0 auto;
+        width: 100%; } }
 /*******************************
     Cover Band Styles
 ********************************/
