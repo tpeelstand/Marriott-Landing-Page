@@ -1,96 +1,63 @@
-footer {
-	@include gradient ($from-color, $to-color);
+.footer-wrapper {
 	width:100%;
-	height:100px;
-    margin: 0 auto;
-    padding: 0;
+	height:auto;
 	position:absolute;
 	bottom:0;
 	left:0;
-    
-    .footer-nav {
-        display: none;
-    }
-    
-    .footer-nav-mobile {
-        width: 100%;
-        @include gradient ($from-color, $to-color);
-        height: auto;
-        margin: 0 auto;
-        padding: 0;
-    }
+    @include gradient ($from-color, $to-color);
+}
+
+.footer {
+	width:100%;
     
     ul {
-        list-style-type: none;
-        width: 100%;
         margin: 0 auto;
-        padding: .5em 0;
-        font-size: 1em;
-        text-align: center;
-        
+        padding: 0;
+        list-style: none;
+
         li {
-            margin: auto;
-            padding: 0;
-             
+            text-align: center;
+            padding: .35em 0;
+            margin: 0 auto;
+            font-size: .85em;
+
             a {
-                color: #eee;
+                color: #EEE;
                 text-decoration: none;
                 &:hover {
-                    text-decoration: underline;      
+                    text-decoration: none;   
                 }
             }
         }
     }
-    
-    .copyright {
-        font-size: .65em;
-        color: $font-color-light;
-        margin: 0 auto;
+    p {
+        font-size: .5em;
+        color: #EEE;
         text-align: center;
+        
     }
 }
-
+/**** Full Width Styles ****/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    footer {
-
-        .footer-nav {
-            display: block;
-        }
-
+    .footer { 
         ul {
-            list-style-type: none;
-            font-size: .75em;
-            display: block;
-
+            margin-left: 4em;
+            
             li {
                 float: left;
-                margin: 0;
-                padding: .25em 1.75em;
-                text-transform: uppercase;
-                a {
-                    text-decoration: none;
-                    color: $font-color-light;
-
-                    &:hover {
-                        text-decoration: underline;   
-                    }
-                }
-            }
-
-            .first {
-                padding-left: 6.5em;   
+                padding: 1.5em;
+                margin: 0 auto;
+                font-size: .9em;
             }
         }
+        p {
+            font-size: .9em;
 
-        .copyright {
-            font-size: .65em;
-            color: $font-color-light;
-            margin: 1em 0 0 7em;
-        }
-
-        .footer-nav-mobile {
-            display: none;   
         }
     }
 }
+
+
+
+
