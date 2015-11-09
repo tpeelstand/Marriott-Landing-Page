@@ -1,9 +1,6 @@
 .footer-wrapper {
 	width:100%;
 	height:auto;
-	position:absolute;
-	bottom:0;
-	left:0;
     @include gradient ($from-color, $to-color);
 }
 
@@ -38,8 +35,8 @@
     }
 }
 /**** Full Width Styles ****/
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* Medium devices (desktop, 992px and up) */
+@media (min-width: 992px) {
     .footer { 
         ul {
             margin-left: 4em;

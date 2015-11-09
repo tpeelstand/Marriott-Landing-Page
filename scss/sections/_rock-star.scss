@@ -29,20 +29,22 @@
     width: 100%;
     margin: 0 auto;
     padding: 2em 0;
+    
 }
 .circle {
     width: 75px;
     height: 75px;
-    margin-top: .75em;
-    margin-right: .5em;
     border-radius: 50%;
     background: #496fb5;
     position: relative;
     float: left;
+    margin-left: 2em;
+    margin-right: .5em;
+    margin-top: .25em;
     i {
         color: #FFF;
         position: absolute;
-        top: 12px;
+        top: 15px;
         left: 15px;
     }
 }
@@ -66,9 +68,6 @@
         width: 49%; 
         float: right;    
     }
-}
-.bottom {
-    margin: 0 auto 1em;
 }
 
 .inline-images {
@@ -116,7 +115,7 @@
     .inline-images {
         display: block;
         width: 100%;
-        margin: .25em 0 2em 0;
+        margin: 2em 0 2em 0;
         padding: 0; 
         
         .image-side-wrapper {

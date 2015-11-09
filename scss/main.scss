@@ -45,6 +45,11 @@
 @import "sections/rock-star";
 
 /*******************************
+    Slideshow Styles
+********************************/
+@import "sections/slideshow";
+
+/*******************************
     Cover Band Styles
 ********************************/
 @import "sections/cover-band";
@@ -68,3 +73,8 @@
     DJ Styles
 ********************************/
 @import "sections/dj";
+
+/*******************************
+   Media Queries & Tablet Fixes
+********************************/
+@import "media";

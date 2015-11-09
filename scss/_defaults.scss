@@ -12,12 +12,13 @@ body {
 }
 .content {
     width: 100%;
-	padding-bottom:100px; /* Height of the footer element */
+	padding-bottom:3em;
 }
 .clear {
     clear: both;
 }
 .borders {
+    width: 98%;
     border-top: 1px solid #CCC;
     border-bottom: 1px solid #CCC;
 }
@@ -64,9 +65,5 @@ h3 {
         margin: 1.5em auto 1em;
         padding: 0;
         color: #496fb5;
-    }
-    .large-text {
-        font-size: 1.53em;
-        color: #333;
     }
 }
