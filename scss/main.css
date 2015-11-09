@@ -1891,8 +1891,11 @@ header {
 .message-wrapper-mobile {
   width: 100%;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 1em 0;
   display: block; }
+  .message-wrapper-mobile h3 {
+    text-align: center;
+    font-size: 1.55em; }
 
 .mobile-circle {
   width: 75px;
@@ -1900,10 +1903,8 @@ header {
   border-radius: 50%;
   background: #496fb5;
   position: relative;
-  float: left;
-  margin-left: 2em;
-  margin-right: .5em;
-  margin-top: .25em; }
+  display: block;
+  margin-left: 40%; }
   .mobile-circle i {
     color: #FFF;
     position: absolute;
@@ -2183,7 +2184,8 @@ input[type=radio]#button-5:checked ~ .arrows#arrow-4 {
 @media (min-width: 320px) and (max-width: 768px) {
   #slideshow-wrap {
     width: 83%;
-    margin: 1em auto 0; }
+    margin: 1em auto 0;
+    display: none; }
 
   .description .description-text {
     padding-top: .5em;
