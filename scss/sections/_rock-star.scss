@@ -12,6 +12,15 @@
     margin: 0 auto; 
     padding: 0;
     
+    h2 {
+        font-size: 1em;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 auto;
+        padding: .5em;
+        color: #496fb5;
+    }
+    
     .image-row {
 
         img {
@@ -20,6 +29,7 @@
 
         p {
             text-align: center;
+            font-size: .8em;
             margin: 0 auto 1em;
             padding: 0;
         }
@@ -92,8 +102,12 @@
     /* Images below banner */
 .travelers-wrapper {
     width: 100%; 
-    margin: 0 auto; 
+    margin: 0 auto 0 1em; 
     padding: 0;
+    
+    h2 {
+        font-size: 2em;
+    }
     
     .image-row {
         width: 32%;
@@ -106,14 +120,17 @@
             }
 
         p {
-            text-align: center;    
+            text-align: center;
+            font-size: 1em;
         }
     }
     .middle {
         margin: 0 1em;    
     }
 }
-    
+    .borders {
+        margin-left: 1em;   
+    }
     .message-wrapper {
         width: 100%;
         margin: 0 auto;
@@ -150,7 +167,7 @@
     .inline-images {
         display: block;
         width: 100%;
-        margin: 2em 0 2em 0;
+        margin: 2em 0 2em 1em;
         padding: 0; 
         
         .image-side-wrapper {

@@ -1334,7 +1334,7 @@ body {
   border-bottom: 1px solid #CCC; }
 
 h1 {
-  font-size: 1.45em;
+  font-size: 3em;
   margin: 1em auto 0;
   padding: 0;
   font-weight: 400; }
@@ -1443,7 +1443,29 @@ header {
 ********************************/
 .header-content {
   text-align: center; }
+  .header-content h1 {
+    font-size: 1.45em;
+    margin: 1em auto 0;
+    padding: 0;
+    font-weight: 400; }
+  .header-content h2 {
+    padding: 0 1em; }
 
+@media (min-width: 992px) {
+  .header-content {
+    text-align: center; }
+    .header-content h1 {
+      font-size: 3em;
+      margin: 1em auto 0;
+      padding: 0;
+      font-weight: 400; }
+    .header-content h2 {
+      font-size: 2em;
+      font-weight: 300;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      color: #496fb5; } }
 /*******************************
     Navigation Styles
 ********************************/
@@ -1669,7 +1691,7 @@ header {
 
   #all > ul {
     list-style: none;
-    margin: 0 auto;
+    margin: 0 auto 0 -1em;
     padding: 0 10px 0 0;
     height: 13em;
     position: relative; }
@@ -1720,7 +1742,7 @@ header {
     .blue span {
       position: absolute;
       bottom: 1em;
-      left: 5em; }
+      left: 4.5em; }
 
   .green {
     background-color: #44A472;
@@ -1768,7 +1790,7 @@ header {
     .gold span {
       position: absolute;
       bottom: 1em;
-      left: 35.5em; }
+      left: 35em; }
 
   .grey {
     background-color: #58595B;
@@ -1784,7 +1806,7 @@ header {
     .grey span {
       position: absolute;
       bottom: 1em;
-      right: 23em; }
+      right: 24.2em; }
 
   .red {
     background-color: #D23A45;
@@ -1800,7 +1822,7 @@ header {
     .red span {
       position: absolute;
       bottom: 1em;
-      right: 9.75em; }
+      right: 10.75em; }
 
   .teal {
     background-color: #57BF9E;
@@ -1816,7 +1838,7 @@ header {
     .teal span {
       position: absolute;
       bottom: 1em;
-      right: 3.75em; }
+      right: 4.75em; }
 
   /* End Circle Colors */ }
 /*******************************
@@ -1881,10 +1903,18 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: 0; }
+  .travelers-wrapper h2 {
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    padding: .5em;
+    color: #496fb5; }
   .travelers-wrapper .image-row img {
     width: 100%; }
   .travelers-wrapper .image-row p {
     text-align: center;
+    font-size: .8em;
     margin: 0 auto 1em;
     padding: 0; }
 
@@ -1941,8 +1971,10 @@ header {
   /* Images below banner */
   .travelers-wrapper {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 0 1em;
     padding: 0; }
+    .travelers-wrapper h2 {
+      font-size: 2em; }
     .travelers-wrapper .image-row {
       width: 32%;
       float: left;
@@ -1951,9 +1983,13 @@ header {
       .travelers-wrapper .image-row img {
         width: 100%; }
       .travelers-wrapper .image-row p {
-        text-align: center; }
+        text-align: center;
+        font-size: 1em; }
     .travelers-wrapper .middle {
       margin: 0 1em; }
+
+  .borders {
+    margin-left: 1em; }
 
   .message-wrapper {
     width: 100%;
@@ -1988,7 +2024,7 @@ header {
   .inline-images {
     display: block;
     width: 100%;
-    margin: 2em 0 2em 0;
+    margin: 2em 0 2em 1em;
     padding: 0; }
     .inline-images .image-side-wrapper {
       padding: 0;
@@ -2011,9 +2047,9 @@ header {
 #slideshow-wrap {
   display: block;
   height: auto;
-  max-width: 97.5%;
+  max-width: 98%;
   margin: auto;
-  margin: 20px auto 0 .2em;
+  margin: 20px auto 0 1em;
   position: relative; }
 
 #slideshow-inner {

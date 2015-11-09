@@ -276,7 +276,7 @@
 }
 #all > ul { 
     list-style: none;
-    margin: 0 auto;
+    margin: 0 auto 0 -1em;
     padding: 0 10px 0 0;
     height: 13em;
     position: relative;
@@ -333,7 +333,7 @@
     span {
         position: absolute;
         bottom: 1em;
-        left: 5em;    
+        left: 4.5em;    
     }
 }
 .green {
@@ -387,7 +387,7 @@
      span {
         position: absolute;
         bottom: 1em;
-        left: 35.5em;    
+        left: 35em;    
     }
 }
 .grey {
@@ -405,7 +405,7 @@
      span {
         position: absolute;
         bottom: 1em;
-        right: 23em;    
+        right: 24.2em;    
     }
 }
 .red {
@@ -423,7 +423,7 @@
      span {
         position: absolute;
         bottom: 1em;
-        right: 9.75em;    
+        right: 10.75em;    
     }
 }
 .teal {
@@ -441,7 +441,7 @@
      span {
         position: absolute;
         bottom: 1em;
-        right: 3.75em;    
+        right: 4.75em;    
     }
 }
 /* End Circle Colors */ 
