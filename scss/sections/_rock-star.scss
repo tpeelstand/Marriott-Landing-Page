@@ -25,13 +25,14 @@
         }
     }
 }
-.message-wrapper {
+.message-wrapper-mobile {
     width: 100%;
     margin: 0 auto;
     padding: 2em 0;
+    display: block;
     
 }
-.circle {
+.mobile-circle {
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -47,6 +48,9 @@
         top: 15px;
         left: 15px;
     }
+}
+.message-wrapper {
+    display: none;
 }
 
 /* Mobile images with city and map at bottom of section */
@@ -106,6 +110,34 @@
         margin: 0 1em;    
     }
 }
+    
+    .message-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2em 0;
+        display: block;
+
+    }
+    .circle {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: #496fb5;
+        position: relative;
+        float: left;
+        margin-left: 2em;
+        margin-right: .5em;
+        margin-top: .25em;
+        i {
+            color: #FFF;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+    }
+    .message-wrapper-mobile {
+        display: none;
+    }
     
     .mobile-images { /** 3 images at bottom with map **/
         display: none;   

@@ -32,9 +32,15 @@
 
     <div class="row">
         
-        <div class="borders">  
+        <div class="borders"> 
+            <!-- Full Width -->
             <div class="message-wrapper">
                 <div class="circle"><i class="fa fa-star fa-3x"></i></div><h3><strong>DID YOU KNOW?</strong> Your redemption stays now earn you credit toward Elite status.</h3>
+                <!-- Mobile -->
+                <div class="message-wrapper-mobile">
+                    <div class="circle"><i class="fa fa-star fa-3x"></i></div>
+                    <h3><strong>DID YOU KNOW?</strong> <br>Your redemption stays now earn you credit toward Elite status.</h3>
+                </div>
             </div>
         </div>
         
@@ -42,18 +48,19 @@
          <div class="slider-wrapper">
             <div>
                 <div id="slideshow-wrap">
-    <input type="radio" id="button-1" name="controls" checked="checked"/>
-    <label for="button-1" class="button"></label>
-    
-    <input type="radio" id="button-2" name="controls"/>
-    <label for="button-2" class="button-style"></label>
-    
-    <input type="radio" id="button-3" name="controls"/>
-    <label for="button-3" class="button-style"></label>
+                
+                    <!-- Button #1 -->
+                <input type="radio" id="button-1" name="controls" checked="checked"/>
+                <label for="button-1" class="button"><p>See<br>Burj Khalifa</p></label>
 
-    <label for="button-1" class="arrows" id="arrow-1">></label>
-    <label for="button-2" class="arrows" id="arrow-2">></label>
-    <label for="button-3" class="arrows" id="arrow-3">></label>
+                <!-- Button 2 -->
+                <input type="radio" id="button-2" name="controls"/>
+                <label for="button-2"><p>Eat<br>Haut Cuisine</p></label>
+                
+                <!-- BUtton #3 -->
+                <input type="radio" id="button-3" name="controls"/>
+                <label for="button-3"><p>Do<br>Shop</p></label>
+
         <div id="slideshow-inner">
             <ul>
                 <li id="slide1">
@@ -77,6 +84,7 @@
                             <p>Life is so lavish here the police drive Ferraris and you can own an island shaped like your favorite country.</p>
                         </div>
                     </div>
+                    
                 </li>
                 <li id="slide3">
                     <img src="images/slides/slide3.jpg"/>
