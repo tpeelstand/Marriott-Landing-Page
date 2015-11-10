@@ -54,11 +54,11 @@
 
 #slideshow-wrap label:not(.arrows):not(.show-description-label) {
     position: absolute;
-    left: 42%;
+    left: 38%;
     bottom: 10%;
     z-index: 100;
-    width: 200px;
-    height: 100px;
+    width: 25%;
+    height: 20%;
     background-color: rgba(235,235,235,.65);
     cursor: pointer;
      
@@ -172,11 +172,12 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
     
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+.description input[type=checkbox]:checked~.description-text { opacity: 1 }
+
+@media (min-width: 320px) and (max-width: 992px) {
     #slideshow-wrap {
-        width: 83%;
+        width: 90%;
         margin: 1em auto 0;
-        display: none;
     }
     
     .description .description-text {
@@ -202,5 +203,9 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
             text-transform: uppercase;
         }
     }
+    #slideshow-wrap label:not(.arrows):not(.show-description-label) {
+            
+                p {font-size: .5em;}
+        }
  }
-.description input[type=checkbox]:checked~.description-text { opacity: 1 }
+

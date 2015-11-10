@@ -1888,7 +1888,7 @@ header {
       margin: 0 auto;
       font-size: .9em; }
   .footer p {
-    font-size: .9em; } }
+    font-size: .75em; } }
 /*******************************
     Rock Star Styles
 ********************************/
@@ -2094,11 +2094,11 @@ header {
 
 #slideshow-wrap label:not(.arrows):not(.show-description-label) {
   position: absolute;
-  left: 42%;
+  left: 38%;
   bottom: 10%;
   z-index: 100;
-  width: 200px;
-  height: 100px;
+  width: 25%;
+  height: 20%;
   background-color: rgba(235, 235, 235, 0.65);
   cursor: pointer; }
   #slideshow-wrap label:not(.arrows):not(.show-description-label) p {
@@ -2217,11 +2217,13 @@ input[type=radio]#button-5:checked ~ .arrows#arrow-4 {
     font-size: 1.5em;
     text-transform: uppercase; }
 
-@media (min-width: 320px) and (max-width: 768px) {
+.description input[type=checkbox]:checked ~ .description-text {
+  opacity: 1; }
+
+@media (min-width: 320px) and (max-width: 992px) {
   #slideshow-wrap {
-    width: 83%;
-    margin: 1em auto 0;
-    display: none; }
+    width: 90%;
+    margin: 1em auto 0; }
 
   .description .description-text {
     padding-top: .5em;
@@ -2241,10 +2243,10 @@ input[type=radio]#button-5:checked ~ .arrows#arrow-4 {
       color: #FFF; }
     .description .description-text .topline {
       font-size: .75em;
-      text-transform: uppercase; } }
-.description input[type=checkbox]:checked ~ .description-text {
-  opacity: 1; }
+      text-transform: uppercase; }
 
+  #slideshow-wrap label:not(.arrows):not(.show-description-label) p {
+    font-size: .5em; } }
 /*******************************
     Cover Band Styles
 ********************************/
@@ -2506,11 +2508,7 @@ input[type=radio]#button-5:checked ~ .arrows#arrow-4 {
       #mobile-nav-wrap .teal span {
         position: absolute;
         top: 4.5em;
-        left: 1.5em; }
-
-  /* Footer for tablet */
-  .footer p {
-    font-size: 1em; } }
+        left: 1.5em; } }
 @media (min-width: 992px) {
   .large-text {
     font-size: 1.53em;
