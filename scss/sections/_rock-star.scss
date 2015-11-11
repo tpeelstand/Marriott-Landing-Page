@@ -54,7 +54,7 @@
     background: #496fb5;
     position: relative;
     display: block;
-    margin-left: 40%;
+    margin-left: 44%;
     i {
         color: #FFF;
         position: absolute;
@@ -69,7 +69,7 @@
 /* Mobile images with city and map at bottom of section */
 .image-wrapper {
     width: 100%;
-    margin: 1em auto 0;
+    margin: .5em auto -.5em;
     padding: 0;
     
     .full-top {
@@ -79,11 +79,14 @@
     }
     .bottom-left {
         width: 49%; 
-        float: left;    
+        float: left; 
+        margin-right: .25em;
+        padding: 0;
     }
     .bottom-right {
         width: 49%; 
-        float: right;    
+        float: left; 
+        padding: 0;
     }
 }
 
@@ -100,7 +103,7 @@
 
     /* Images below banner */
 .travelers-wrapper {
-    width: 100%; 
+    width: 98%; 
     margin: 0 auto 0 1em; 
     padding: 0;
     
@@ -158,35 +161,18 @@
         display: none;
     }
     
-    .mobile-images { /** 3 images at bottom with map **/
-        display: none;   
-    }
-    
     /* Full width images below slideshow */
-    .inline-images {
-        display: block;
-        width: 100%;
-        margin: 2em 0 2em 1em;
-        padding: 0; 
-        
-        .image-side-wrapper {
-            padding: 0;
-            margin: 0 auto;
-            width: 24%;
-            > img {
-                float: left;
-                width: 100%;    
-            }
-        }
-        .image-mid-wrapper {
-            padding: 0;
-            margin: 0 .7em;
-            width: 50.1%; 
-            > img {
-                float: left; 
-                margin: 0 auto;
-                width: 100%;   
-            }
+}
+
+@media (min-width: 1200px) {
+    .travelers-wrapper {
+    
+        .col-sm-12 {
+            width: 30%;
+            float: left;
+            padding: 0 .75em;
+            margin-left: .5em;
         }
     }
 }
+
