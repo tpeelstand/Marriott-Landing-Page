@@ -2614,6 +2614,15 @@ header {
   display: none; }
 
 /** FULL WIDTH VIEW MEDIA QUERY **/
+@media (min-width: 320px) and (max-width: 375px) {
+  .mobile-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #496fb5;
+    position: relative;
+    display: block;
+    margin-left: 8em; } }
 @media (min-width: 992px) {
   .banner-wrapper {
     margin-top: 5em; }
