@@ -2516,12 +2516,22 @@ header {
 
 /**** Full Width Styles ****/
 /* Medium devices (desktop, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .footer ul {
     margin-left: 4em; }
     .footer ul li {
       float: left;
-      padding: 1.5em;
+      padding: 1em;
+      margin: 0 auto;
+      font-size: .8em; }
+  .footer p {
+    font-size: .75em; } }
+@media (min-width: 1200px) {
+  .footer ul {
+    margin-left: 4em; }
+    .footer ul li {
+      float: left;
+      padding: 1.75em;
       margin: 0 auto;
       font-size: .9em; }
   .footer p {
@@ -2871,10 +2881,14 @@ input[type=radio]#button-5:checked ~ .arrows#arrow-4 {
 
   #slideshow-wrap label:not(.arrows):not(.show-description-label) p {
     font-size: 75%; } }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   #slideshow-wrap {
     width: 95.5%;
     margin: 1em auto 0 1.5em; } }
+@media (min-width: 1200px) {
+  #slideshow-wrap {
+    width: 95.5%;
+    margin: 1em auto 0 2em; } }
 /*******************************
     Cover Band Styles
 ********************************/
@@ -3117,7 +3131,7 @@ input[type=radio]#button-5:checked ~ .arrows#arrow-4 {
   .inline-images {
     display: block;
     width: 100%;
-    margin: .5em auto 0 1.5em;
+    margin: .5em auto 0 2em;
     padding: 0; }
     .inline-images .image-side-wrapper {
       padding: 0;

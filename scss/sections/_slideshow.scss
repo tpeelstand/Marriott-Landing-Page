@@ -243,10 +243,17 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
                 p {font-size: 75%;}
         }
  }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     #slideshow-wrap {
         width: 95.5%;
         margin: 1em auto 0 1.5em;
     }
  }
+
+@media (min-width: 1200px) {
+    #slideshow-wrap {
+    width: 95.5%;
+    margin: 1em auto 0 2em;
+}
+}
 
