@@ -31,10 +31,31 @@ body {
 h3 {
     font-size: 1.75em;
     font-weight: 300;
-    text-align: left;
+    text-align: center;
     margin: 18px 0;
-    padding: .25em;
-    color: #496fb5;    
+    padding: .25em;    
+}
+/* HEADER FONT COLORS */
+.blue-font {
+    color: #496fb5;
+}
+.green-font {
+    color: #44A472;
+}
+.purple-font {
+    color: #6F489C;
+}
+.yellow-font {
+    color: #F59120;
+}
+.grey-font {
+    color: #58595B;
+}
+.red-font {
+    color: #D23A45;
+}
+.teal-font {
+    color: #57BF9E;
 }
 .large-text {
     font-size: 1em;

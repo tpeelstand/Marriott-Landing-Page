@@ -45,11 +45,6 @@
 @import "sections/rock-star";
 
 /*******************************
-    Slideshow Styles
-********************************/
-@import "sections/slideshow";
-
-/*******************************
     Cover Band Styles
 ********************************/
 @import "sections/cover-band";
@@ -78,3 +73,11 @@
    Media Queries & Tablet Fixes
 ********************************/
 @import "media";
+
+
+/* STYLES FOR EACH SLIDESHOW */
+
+/*******************************
+    Slideshow Styles
+********************************/
+@import "slideshow/slideshow", "slideshow/slideshow-lv", "slideshow/slideshow-at", "slideshow/slideshow-sj", "slideshow/slideshow-ny", "slideshow/slideshow-vc", "slideshow/slideshow-tp";
