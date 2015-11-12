@@ -271,16 +271,16 @@
 
     #mobile-nav-wrap {
         width: 100%;
-        margin: 0 auto 1.5em .75em;
+        margin: 0 auto 1.5em;
         padding: 0;
 
         #all-mobile > ul { 
-        list-style: none;
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        height: 8em;
-        position: relative;
+            list-style: none;
+            margin: 0 0 0 1em;
+            padding: 0;
+            width: 100%;
+            height: 8em;
+            position: relative;
 
         li {
             float: left;
@@ -1186,3 +1186,6 @@
 /* End Circle Colors */ 
 }
 
+@media (min-width: 414px) and (max-width: 1200px) {
+    
+}

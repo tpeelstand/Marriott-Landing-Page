@@ -1,11 +1,16 @@
   header {
     width: 100%;
     height: 4.1em;
-    margin: 0 auto;
+    margin: 0 -2em 0 0;
     padding: 0;
     position: relative;
     @include gradient ($from-color, $to-color);
     
+      .mobile-logo-wrapper {
+            padding: 0; 
+            margin: 0 auto;
+            width: 100%;   
+      }
     .mobile-logo {
         width: 8em;
         position: absolute;
@@ -32,31 +37,37 @@
 
 /* Medium devices (desktops, 600px and up) */
 @media (min-width: 600px) and (max-width: 991px) {
-    .mobile-logo {
-        display: block;   
-    }
-    .logo-container {
-        width: 100%;
-        display: none;
+    .mobile-logo-wrapper {
+        padding: 0; 
         margin: 0 auto;
-        padding: 0;
+        width: 100%;
         
-        i {
-            float: right;    
+        .mobile-logo {
+            display: block;   
         }
-        .center {
-            width: 200px;
-            float: none;
-            position: absolute;
-            left: 60%;
-            top: 0; 
-            margin-left: -150px;
-            margin-top: 8px;
-            display: block
+        .logo-container {
+            width: 100%;
+            display: none;
+            margin: 0 auto;
+            padding: 0;
+
+            i {
+                float: right;    
+            }
+            .center {
+                width: 200px;
+                float: none;
+                position: absolute;
+                left: 60%;
+                top: 0; 
+                margin-left: -150px;
+                margin-top: 8px;
+                display: block
+            }
         }
-    }
-    .mobile-back {
-        display: block;   
+        .mobile-back {
+            display: block;   
+        }
     }
 }
 

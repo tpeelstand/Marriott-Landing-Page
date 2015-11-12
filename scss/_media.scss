@@ -1,20 +1,21 @@
 /** Media Queries for adjustments and all tablet styles **/
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 360px) {
     .image-wrapper {
         width: 92%;
         
         .top-image {
-            width: 91.89%;
-            padding: 0 4% 0;    
+            width: 99.2%;
+            padding: 0;
+            margin-left: .075em;
         }
         .bottom-images {
             width: 99.65%;
             
             .bottom-right {
-                width: 49%;
+                width: 49.15%;
                 float: left;
-                margin-left: .11em;
+                margin-left: .05em;
                 padding: 0;  
             }
         }
@@ -25,6 +26,31 @@
     }    
 }
 
+@media (min-width: 361px) and (max-width: 600px) {
+    .image-wrapper {
+        width: 92%;
+        
+        .top-image {
+            width: 99.2%;
+            padding: 0;
+            margin-left: .075em;    
+        }
+        .bottom-images {
+            width: 99.65%;
+            
+            .bottom-right {
+                width: 49.15%;
+                float: left;
+                margin-left: .13em;
+                padding: 0;  
+            }
+        }
+    }
+    
+    .inline-images {
+        display: none;   
+    }    
+}
 @media (min-width: 544px) and (max-width: 600px) {
 
     .travelers-wrapper {
@@ -39,8 +65,8 @@
         .col-sm-12 {
             width: 30%;
             float: left;
-            padding: .25em;
-            margin-left: .45em;
+            padding: 0;
+            margin-left: 1em;
         }
         
         .inline-images {
@@ -60,14 +86,14 @@
     .inline-images {
             display: block;
             width: 100%;
-            margin: 1em 0 2em 1.75em;
+            margin: 1em 0 2em 1.5em;
             padding: 0; 
         
         .image-side-wrapper {
             padding: 0;
             margin: 0 auto;
             float: left;
-            width: 21%;
+            width: 21.5%;
             > img {
                 width: 100%;    
             }
@@ -76,7 +102,7 @@
             padding: 0;
             margin: 0 .7em;
             float: left;
-            width: 44%; 
+            width: 44.75%; 
             > img { 
                 margin: 0 auto;
                 width: 100%;   
@@ -126,7 +152,7 @@
     .inline-images {
             display: block;
             width: 100%;
-            margin: .5em auto 0 1.5em;
+            margin: .5em auto 0 2em;
             padding: 0; 
         
         .image-side-wrapper {
@@ -161,6 +187,46 @@
     .middle {
         padding: 0;
     }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    body {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    header {
+    width: 100%;
+    height: 4.1em;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    @include gradient ($from-color, $to-color);
+    
+      .mobile-logo-wrapper {
+            padding: 0; 
+            margin: 0 auto;
+            width: 100%;   
+      }
+    .mobile-logo {
+        width: 8em;
+        position: absolute;
+        left: 2em;
+        top: .5em;
+    }
+    .mobile-back {
+        font-size: .75em;
+        position: absolute;
+        top: .75em;
+        right: 5em;
+        a {
+            color: #eee;
+            text-decoration: none;
+        }
+    }
+}
 }
 
 /* 992 - 1199 */
@@ -216,7 +282,7 @@
         display: block;
         
         h3 {
-            font-size: 1.35em;    
+            font-size: 1.3em;    
         }
     }
     .circle {

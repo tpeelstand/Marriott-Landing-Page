@@ -1,9 +1,9 @@
 #slideshow-wrap {
     display: block;
-    height: auto;
+    height: 26.5%;
     max-width: 98%;
     margin: auto;
-    margin: 20px auto 0 1em;
+    margin: 3em auto 5em 1em;
     position: relative;
 }
 
@@ -177,6 +177,7 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
 @media (min-width: 320px) and (max-width: 475px) {
     #slideshow-wrap {
         width: 91.5%;
+        height: auto;
         margin: 1em auto 0;
     }
     
@@ -209,6 +210,49 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
                 p {font-size: .5em;}
         }
 }
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      #slideshow-wrap {
+        width: 91.5%;
+        height: 11em;
+        margin: 1em auto 0;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      #slideshow-wrap {
+        width: 91.5%;
+        height: 14.5em;
+        margin: 1em auto 0;
+    }
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1023px) and (orientation:portrait) {
+  /* For portrait layouts only */
+    #slideshow-wrap {
+        width: 91.5%;
+        margin: 1em auto 0;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1023px) and (orientation:landscape) {
+  /* For landscape layouts only */
+    #slideshow-wrap {
+        width: 91.5%;
+        margin: 1em auto 0;
+    }
+}
 @media (min-width: 476px) and (max-width: 991px) {
     #slideshow-wrap {
         width: 91.5%;
@@ -238,9 +282,8 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
             text-transform: uppercase;
         }
     }
-    #slideshow-wrap label:not(.arrows):not(.show-description-label) {
-            
-                p {font-size: 75%;}
+    #slideshow-wrap label:not(.arrows):not(.show-description-label) {    
+            p {font-size: 75%;}
         }
  }
 @media (min-width: 992px) and (max-width: 1199px) {
