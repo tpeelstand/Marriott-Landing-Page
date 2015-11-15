@@ -5,7 +5,9 @@ body {
 	padding:0;
 	height:100%;
     width: 100%;
+    color: #1b1b1b;
     font-family: $font;
+    font-weight: 300;
     
 }
 .wrapper {
@@ -28,6 +30,15 @@ body {
     border-top: 1px solid #CCC;
     border-bottom: 1px solid #CCC;
 }
+.banner-adjustment {
+    margin-top: 20em;
+}
+.top-banner-adjusment {
+    margin-top: 5em;
+}
+h1, h2, h3 {
+    font-weight: 300;
+}
 h3 {
     font-size: 1.75em;
     font-weight: 300;
@@ -35,41 +46,65 @@ h3 {
     margin: 18px 0;
     padding: .25em;    
 }
+a {
+    text-decoration: none;
+}
 /* HEADER FONT COLORS */
-.blue-font {
+.blue-font a {
     color: #496fb5;
 }
-.green-font {
+.green-font a {
     color: #44A472;
 }
-.purple-font {
+.purple-font a {
     color: #6F489C;
 }
-.yellow-font {
+.yellow-font a {
     color: #F59120;
 }
-.grey-font {
+.grey-font a {
     color: #58595B;
 }
-.red-font {
+.red-font a {
     color: #D23A45;
 }
-.teal-font {
+.teal-font a {
     color: #57BF9E;
 }
 .large-text {
     font-size: 1em;
     padding: .5em 1em;
-    color: #333;
     text-align: center;
+    margin: 0 auto;
+}
+ a img {
+     width: 100%;
+     margin: 0 auto;
+     padding: 0;
+ }
+@media (min-width: 300px) and (max-width: 991px) {
+    .return {
+        display: none;   
+    }
+    .return-mobile {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 5em;
+        margin-right: 8em;
+
+        a {
+            color: #1b1b1b;
+            font-size: .9em;    
+        }
+    }    
 }
 
 @media (min-width: 992px) {
     h1 {
-    font-size: 4em;
+    font-size: 3.125em;
     margin: 1em auto 0;
     padding: 0;
-    font-weight: 400;
     }
     h2 {
         font-size: 2em;
@@ -78,5 +113,20 @@ h3 {
         margin: 1.5em auto 1em;
         padding: 0;
         color: #496fb5;
+    }
+    .return-mobile {
+        display: none;   
+    }
+    .return {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 5em;
+        margin-right: 8em;
+
+        a {
+            color: #1b1b1b;
+            font-size: .9em;    
+        }
     }
 }

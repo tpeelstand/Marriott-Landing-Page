@@ -75,7 +75,7 @@
             top: 1em;
             left: 10%;
         }
-        .cover-band /* Red Circle */ {
+        .undisc-talent /* Red Circle */ {
             position: absolute;
             top: 1em;
             left: 40%;
@@ -281,6 +281,7 @@
             width: 100%;
             height: 8em;
             position: relative;
+            font-family: $font;
 
         li {
             float: left;
@@ -341,7 +342,7 @@
             top: 1em;
             left: 10%;
         }
-        .cover-band /* Red Circle */ {
+        .undisc-talent /* Red Circle */ {
             position: absolute;
             top: 1em;
             left: 40%;
@@ -611,7 +612,7 @@
             top: 1em;
             left: 10%;
         }
-        .cover-band /* Red Circle */ {
+        .undisc-talent /* Red Circle */ {
             position: absolute;
             top: 1em;
             left: 40%;
@@ -848,7 +849,6 @@
 #all:hover ul:hover a {
     opacity: 0.5;
     background: #999;
-    color: #999;
 }
 #all:hover ul:hover a:hover {
     opacity: 1;
@@ -1008,7 +1008,7 @@
 } 
     
 .nav-full {
-    width: 100%;
+    width: 99%;
     margin: 0 auto;
     display: none;
     padding: 0;
@@ -1016,7 +1016,7 @@
 #all > ul { 
     list-style: none;
     margin: 0 auto 0 -1em;
-    padding: 0 10px 0 0;
+    padding: 0;
     height: 13em;
     position: relative;
     
@@ -1052,7 +1052,6 @@
 #all:hover ul:hover a {
     opacity: 0.5;
     background: #999;
-    color: #999;
 }
 #all:hover ul:hover a:hover {
     opacity: 1;
@@ -1072,7 +1071,7 @@
     span {
         position: absolute;
         bottom: 1em;
-        left: 4.5em;    
+        left: 5em;    
     }
 }
 .green {
@@ -1126,7 +1125,7 @@
      span {
         position: absolute;
         bottom: 1em;
-        left: 35em;    
+        left: 35.4em;    
     }
 }
 .grey {
@@ -1184,8 +1183,4 @@
     }
 }
 /* End Circle Colors */ 
-}
-
-@media (min-width: 414px) and (max-width: 1200px) {
-    
 }

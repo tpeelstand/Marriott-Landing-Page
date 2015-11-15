@@ -1,6 +1,13 @@
 /** Media Queries for adjustments and all tablet styles **/
 
 @media (min-width: 300px) and (max-width: 360px) {
+    .travelers-wrapper {
+        
+        .tablet-img {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
     .image-wrapper {
         width: 92%;
         
@@ -198,12 +205,12 @@
     }
     
     header {
-    width: 100%;
-    height: 4.1em;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    @include gradient ($from-color, $to-color);
+        width: 100%;
+        height: 4.1em;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        @include gradient ($from-color, $to-color);
     
       .mobile-logo-wrapper {
             padding: 0; 
@@ -286,19 +293,12 @@
         }
     }
     .circle {
-        width: 75px;
-        height: 75px;
+        color: #FFF;
+        padding: .4em;
+        margin-right:.25em;
         border-radius: 50%;
-        position: relative;
-        float: left;
-        margin-left: 2em;
-        margin-right: .5em;
-        margin-top: .25em;
         i {
             color: #FFF;
-            position: absolute;
-            top: 15px;
-            left: 15px;
         }
     }
     /* HEADER FONT COLORS */
@@ -332,8 +332,10 @@
 @media (min-width: 992px) {
     
     .large-text {
-        font-size: 1.53em;
-        color: #333;
+        font-size: 1.250em;
+        padding: .5em 1em;
+        width: 78%;
+        margin: 0 auto;
     }
     .nav-full {
         display: block;
@@ -359,23 +361,17 @@
         display: block;
         
         h3 {
-            font-size: 1.65em;    
+            font-size: 1.65em;
+            position: relative;
         }
     }
     .circle {
-        width: 75px;
-        height: 75px;
+        color: #FFF;
+        padding: .4em;
+        margin-right:.25em;
         border-radius: 50%;
-        position: relative;
-        float: left;
-        margin-left: 2em;
-        margin-right: .5em;
-        margin-top: .25em;
         i {
             color: #FFF;
-            position: absolute;
-            top: 15px;
-            left: 15px;
         }
     }
     /* HEADER FONT COLORS */

@@ -1316,7 +1316,9 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: "Open Sans", sans-serif; }
+  color: #1b1b1b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
 
 .wrapper {
   min-height: 100%;
@@ -1338,6 +1340,15 @@ body {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC; }
 
+.banner-adjustment {
+  margin-top: 20em; }
+
+.top-banner-adjusment {
+  margin-top: 5em; }
+
+h1, h2, h3 {
+  font-weight: 300; }
+
 h3 {
   font-size: 1.75em;
   font-weight: 300;
@@ -1345,40 +1356,60 @@ h3 {
   margin: 18px 0;
   padding: .25em; }
 
+a {
+  text-decoration: none; }
+
 /* HEADER FONT COLORS */
-.blue-font {
+.blue-font a {
   color: #496fb5; }
 
-.green-font {
+.green-font a {
   color: #44A472; }
 
-.purple-font {
+.purple-font a {
   color: #6F489C; }
 
-.yellow-font {
+.yellow-font a {
   color: #F59120; }
 
-.grey-font {
+.grey-font a {
   color: #58595B; }
 
-.red-font {
+.red-font a {
   color: #D23A45; }
 
-.teal-font {
+.teal-font a {
   color: #57BF9E; }
 
 .large-text {
   font-size: 1em;
   padding: .5em 1em;
-  color: #333;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
+a img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+@media (min-width: 300px) and (max-width: 991px) {
+  .return {
+    display: none; }
+
+  .return-mobile {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 5em;
+    margin-right: 8em; }
+    .return-mobile a {
+      color: #1b1b1b;
+      font-size: .9em; } }
 @media (min-width: 992px) {
   h1 {
-    font-size: 4em;
+    font-size: 3.125em;
     margin: 1em auto 0;
-    padding: 0;
-    font-weight: 400; }
+    padding: 0; }
 
   h2 {
     font-size: 2em;
@@ -1386,7 +1417,20 @@ h3 {
     text-align: center;
     margin: 1.5em auto 1em;
     padding: 0;
-    color: #496fb5; } }
+    color: #496fb5; }
+
+  .return-mobile {
+    display: none; }
+
+  .return {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 5em;
+    margin-right: 8em; }
+    .return a {
+      color: #1b1b1b;
+      font-size: .9em; } }
 /*******************************
     Mixins
 ********************************/
@@ -1456,6 +1500,9 @@ header {
         display: block; }
     .mobile-logo-wrapper .mobile-back {
       display: block; } }
+@media (min-width: 300px) and (max-width: 991px) {
+  .social {
+    display: none; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 992px) {
   .mobile-logo {
@@ -1479,7 +1526,17 @@ header {
       display: block; }
 
   .mobile-back {
-    display: none; } }
+    display: none; }
+
+  .social {
+    float: right;
+    display: block;
+    margin: .4em auto 0;
+    padding: 0; }
+    .social p {
+      color: #eee; }
+      .social p a {
+        color: #eee; } }
 /*******************************
     Header Content Styles
 ********************************/
@@ -1489,8 +1546,7 @@ header {
     .header-content h1 {
       font-size: 1.45em;
       margin: 1em auto 0;
-      padding: 0;
-      font-weight: 400; }
+      padding: 0; }
     .header-content h2 {
       font-size: 1.25em;
       font-weight: 300;
@@ -1504,8 +1560,7 @@ header {
     .header-content h1 {
       font-size: 2em;
       margin: 1em auto 0;
-      padding: 0;
-      font-weight: 400; }
+      padding: 0; }
     .header-content h2 {
       font-size: 1.75em;
       font-weight: 300;
@@ -1520,10 +1575,9 @@ header {
   .header-content {
     text-align: center; }
     .header-content h1 {
-      font-size: 3em;
+      font-size: 3.125em;
       margin: 1em auto 0;
-      padding: 0;
-      font-weight: 400; }
+      padding: 0; }
     .header-content h2 {
       font-size: 2em;
       font-weight: 300;
@@ -1532,7 +1586,7 @@ header {
       padding: 0;
       color: #496fb5; }
     .header-content .large-text {
-      font-size: 1.25em;
+      font-size: 1.250em;
       padding: .5em 1em; } }
 /*******************************
     Navigation Styles
@@ -1595,7 +1649,7 @@ header {
         position: absolute;
         top: 1em;
         left: 10%; }
-      #mobile-nav-wrap .bottom-nav .cover-band {
+      #mobile-nav-wrap .bottom-nav .undisc-talent {
         position: absolute;
         top: 1em;
         left: 40%; }
@@ -1762,7 +1816,8 @@ header {
       padding: 0;
       width: 100%;
       height: 8em;
-      position: relative; }
+      position: relative;
+      font-family: "Open Sans", sans-serif; }
       #mobile-nav-wrap #all-mobile > ul li {
         float: left;
         width: 3em;
@@ -1805,7 +1860,7 @@ header {
         position: absolute;
         top: 1em;
         left: 10%; }
-      #mobile-nav-wrap .bottom-nav .cover-band {
+      #mobile-nav-wrap .bottom-nav .undisc-talent {
         position: absolute;
         top: 1em;
         left: 40%; }
@@ -2018,7 +2073,7 @@ header {
         position: absolute;
         top: 1em;
         left: 10%; }
-      #mobile-nav-wrap .bottom-nav .cover-band {
+      #mobile-nav-wrap .bottom-nav .undisc-talent {
         position: absolute;
         top: 1em;
         left: 40%; }
@@ -2215,8 +2270,7 @@ header {
 
   #all:hover ul:hover a {
     opacity: 0.5;
-    background: #999;
-    color: #999; }
+    background: #999; }
 
   #all:hover ul:hover a:hover {
     opacity: 1; }
@@ -2353,7 +2407,7 @@ header {
     display: none; }
 
   .nav-full {
-    width: 100%;
+    width: 99%;
     margin: 0 auto;
     display: none;
     padding: 0; }
@@ -2361,7 +2415,7 @@ header {
   #all > ul {
     list-style: none;
     margin: 0 auto 0 -1em;
-    padding: 0 10px 0 0;
+    padding: 0;
     height: 13em;
     position: relative; }
     #all > ul li {
@@ -2393,8 +2447,7 @@ header {
 
   #all:hover ul:hover a {
     opacity: 0.5;
-    background: #999;
-    color: #999; }
+    background: #999; }
 
   #all:hover ul:hover a:hover {
     opacity: 1; }
@@ -2411,7 +2464,7 @@ header {
     .blue span {
       position: absolute;
       bottom: 1em;
-      left: 4.5em; }
+      left: 5em; }
 
   .green {
     background-color: #44A472;
@@ -2459,7 +2512,7 @@ header {
     .gold span {
       position: absolute;
       bottom: 1em;
-      left: 35em; }
+      left: 35.4em; }
 
   .grey {
     background-color: #58595B;
@@ -2576,7 +2629,9 @@ header {
   width: 100%;
   margin: 0 auto; }
   .banner-wrapper img {
-    width: 100%; }
+    width: 200%;
+    overflow: hidden;
+    margin-left: -50%; }
 
 .travelers-wrapper {
   width: 100%;
@@ -2671,7 +2726,6 @@ header {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background: #496fb5;
     position: relative;
     display: block;
     margin-left: 40%; } }
@@ -2703,6 +2757,13 @@ header {
     margin-left: 1em; }
 
   /* Full width images below slideshow */ }
+@media (min-width: 992px) {
+  .banner-wrapper {
+    width: 100%;
+    margin: 0 auto; }
+    .banner-wrapper img {
+      width: 100%;
+      margin: 0 auto; } }
 @media (min-width: 1200px) {
   .travelers-wrapper .col-sm-12 {
     width: 30%;
@@ -2710,25 +2771,14 @@ header {
     padding: 0 .75em;
     margin-left: .5em; } }
 /*******************************
-    Cover Band Styles
-********************************/
-/*******************************
-    Touring Act Styles
-********************************/
-/*******************************
-    Producer Styles
-********************************/
-/*******************************
-    Undiscovered Talent Styles
-********************************/
-/*******************************
-    DJ Styles
-********************************/
-/*******************************
    Media Queries & Tablet Fixes
 ********************************/
 /** Media Queries for adjustments and all tablet styles **/
 @media (min-width: 300px) and (max-width: 360px) {
+  .travelers-wrapper .tablet-img {
+    width: 70%;
+    margin: 0 auto; }
+
   .image-wrapper {
     width: 92%; }
     .image-wrapper .top-image {
@@ -2939,19 +2989,12 @@ header {
       font-size: 1.3em; }
 
   .circle {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    position: relative;
-    float: left;
-    margin-left: 2em;
-    margin-right: .5em;
-    margin-top: .25em; }
+    color: #FFF;
+    padding: .4em;
+    margin-right: .25em;
+    border-radius: 50%; }
     .circle i {
-      color: #FFF;
-      position: absolute;
-      top: 15px;
-      left: 15px; }
+      color: #FFF; }
 
   /* HEADER FONT COLORS */
   .blue-font {
@@ -2979,8 +3022,10 @@ header {
     display: none; } }
 @media (min-width: 992px) {
   .large-text {
-    font-size: 1.53em;
-    color: #333; }
+    font-size: 1.250em;
+    padding: .5em 1em;
+    width: 78%;
+    margin: 0 auto; }
 
   .nav-full {
     display: block; }
@@ -2999,22 +3044,16 @@ header {
     padding: 2em 0;
     display: block; }
     .message-wrapper h3 {
-      font-size: 1.65em; }
+      font-size: 1.65em;
+      position: relative; }
 
   .circle {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    position: relative;
-    float: left;
-    margin-left: 2em;
-    margin-right: .5em;
-    margin-top: .25em; }
+    color: #FFF;
+    padding: .4em;
+    margin-right: .25em;
+    border-radius: 50%; }
     .circle i {
-      color: #FFF;
-      position: absolute;
-      top: 15px;
-      left: 15px; }
+      color: #FFF; }
 
   /* HEADER FONT COLORS */
   .blue-font {
@@ -3124,7 +3163,7 @@ header {
   z-index: 100;
   width: 25%;
   height: 20%;
-  background-color: rgba(235, 235, 235, 0.65);
+  background-color: rgba(235, 235, 235, 0.8);
   cursor: pointer; }
   #slideshow-wrap label:not(.arrows):not(.show-description-label) p {
     margin-top: 8%;
@@ -3728,10 +3767,10 @@ input[type=radio]#button-5-at:checked ~ .arrows-at#arrow-4-at {
 .description-at label {
   display: none; }
 
-#slideshow-inner-at > ul > li .description label {
+#slideshow-inner-at > ul > li .description-at label {
   opacity: 1; }
 
-.description input[type=checkbox]:checked ~ label {
+.description-at input[type=checkbox]:checked ~ label {
   opacity: 1; }
 
 .description-at .description-text-at {
@@ -3849,7 +3888,7 @@ input[type=radio]#button-5-at:checked ~ .arrows-at#arrow-4-at {
     width: 95.5%;
     margin: 1em auto 0 1.5em; } }
 @media (min-width: 1200px) {
-  #slideshow-wrap-lv {
+  #slideshow-wrap-at {
     width: 95.5%;
     margin: 1em auto 0 2em; } }
 #slideshow-wrap-sj {

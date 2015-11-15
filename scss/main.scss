@@ -27,7 +27,7 @@
 /*******************************
     Header Content Styles
 ********************************/
-@import "sections/header-content";
+@import "header-content";
 
 /*******************************
     Navigation Styles
@@ -42,32 +42,8 @@
 /*******************************
     Rock Star Styles
 ********************************/
-@import "sections/rock-star";
+@import "rock-star";
 
-/*******************************
-    Cover Band Styles
-********************************/
-@import "sections/cover-band";
-
-/*******************************
-    Touring Act Styles
-********************************/
-@import "sections/touring-act";
-
-/*******************************
-    Producer Styles
-********************************/
-@import "sections/producer";
-
-/*******************************
-    Undiscovered Talent Styles
-********************************/
-@import "sections/undisc-talent";    
-
-/*******************************
-    DJ Styles
-********************************/
-@import "sections/dj";
 
 /*******************************
    Media Queries & Tablet Fixes

@@ -41,7 +41,7 @@
 
         <!-- INCLUDED NAVIGATION IN INDEX OTHERWISE SMOOTH SCROLLING EFFECT WOULD NOT WORK -->
             
-            <div class="container nav-full">
+            <div id="start" class="container nav-full">
                 <!-- Full navigation -->
                 <div class="row">  
                      <!-- Start Navigation -->
@@ -68,23 +68,23 @@
             </div> -->
             
             <!-- Mobile Navigation -->
-            <div class="container">
+            <div id="start-mobile" class="container">
                 <div class="row"> 
                     <div id="mobile-nav-wrap">
                         <div id="all-mobile">
                             <!-- Top -->
-                            <ul class="top-nav">
+                            <ul id="start" class="top-nav">
                                 <li class="rock-star"><a class="blue" href="#rock-star"><span>Rock<br>Star</span></a></li>
-                                <li class="cover-band"><a class="green" href="#"><span>Cover<br>Band</span></a></li>
-                                <li class="touring-act"><a class="purple" href="#"><span>Touring<br>Act</span></a></li>
-                                <li class="karaoke-star"><a class="gold" href="#"><span>Karaoke<br>Star</span></a></li>
+                                <li class="cover-band"><a class="green" href="#cover-band"><span>Cover<br>Band</span></a></li>
+                                <li class="touring-act"><a class="purple" href="#touring-act"><span>Touring<br>Act</span></a></li>
+                                <li class="karaoke-star"><a class="gold" href="#karaoke-star"><span>Karaoke<br>Star</span></a></li>
                             </ul>
                             <!-- Bottom -->
                             <ul class="bottom-nav">
                                 
-                                <li class="producer"><a class="grey" href="#"><span>Producer</span></a></li>
-                                <li class="cover-band"><a class="red" href="#"><span>Undiscovered<br>Talent</span></a></li>
-                                <li class="dj"><a class="teal" href="#"><span>DJ</span></a></li>
+                                <li class="producer"><a class="grey" href="#producer"><span>Producer</span></a></li>
+                                <li class="undisc-talent"><a class="red" href="#undiscovered-talent"><span>Undiscovered<br>Talent</span></a></li>
+                                <li class="dj"><a class="teal" href="#dj"><span>DJ</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -94,31 +94,59 @@
         <!-- ***** / NAVIGATION ***** -->
             
             <!-- Rock Star Section - refer to rock-star.html for all html code or rock-star.scss for styles -->
-             <div data-ng-include="'partials/rock-star.html'"></div> 
+             <div data-ng-include="'partials/rock-star.html'"></div>
+            <!-- Full Return -->
+            <div class="return"><a href="#start">Return to top <i class="fa fa-level-up"></i></a></div>
+            <!-- Mobile Return -->
+            <div class="return-mobile"><a href="#start-mobile">Return to top <i class="fa fa-level-up"></i></a></div>
             <!-- / End Rock Star -->
 
             <!-- Cover Band Section - refer to rock-star.html for all html code or rock-star.scss for styles -->
-             <div data-ng-include="'partials/cover-band.html'"></div> 
+             <div data-ng-include="'partials/cover-band.html'"></div>
+            <!-- Full Return -->
+            <div class="return"><a href="#start">Return to top <i class="fa fa-level-up"></i></a></div>
+            <!-- Mobile Return -->
+            <div class="return-mobile"><a href="#start-mobile">Return to top <i class="fa fa-level-up"></i></a></div>
             <!-- / End Cover Band -->
             
             <!-- Touring Act Section - refer to rock-star.html for all html code or rock-star.scss for styles -->
-             <div data-ng-include="'partials/touring-act.html'"></div> 
+             <div data-ng-include="'partials/touring-act.html'"></div>
+            <!-- Full Return -->
+            <div class="return"><a href="#start">Return to top <i class="fa fa-level-up"></i></a></div>
+            <!-- Mobile Return -->
+            <div class="return-mobile"><a href="#start-mobile">Return to top <i class="fa fa-level-up"></i></a></div>
             <!-- / End Touring Act -->
             
             <!-- Karaoke Star Section - refer to rock-star.html for all html code or rock-star.scss for styles -->
              <div data-ng-include="'partials/karaoke-star.html'"></div> 
+            <!-- Full Return -->
+            <div class="return"><a href="#start">Return to top <i class="fa fa-level-up"></i></a></div>
+            <!-- Mobile Return -->
+            <div class="return-mobile"><a href="#start-mobile">Return to top <i class="fa fa-level-up"></i></a></div>
             <!-- / End Karaoke Star -->
             
             <!-- Record Producer Section - refer to rock-star.html for all html code or rock-star.scss for styles -->
-             <div data-ng-include="'partials/producer.html'"></div> 
+             <div data-ng-include="'partials/producer.html'"></div>
+            <!-- Full Return -->
+            <div class="return"><a href="#start">Return to top <i class="fa fa-level-up"></i></a></div>
+            <!-- Mobile Return -->
+            <div class="return-mobile"><a href="#start-mobile">Return to top <i class="fa fa-level-up"></i></a></div>
             <!-- / End Record Producer -->
             
             <!-- Undiscovered Talent Section - refer to rock-star.html for all html code or rock-star.scss for styles -->
-             <div data-ng-include="'partials/undiscovered-talent.html'"></div> 
+             <div data-ng-include="'partials/undiscovered-talent.html'"></div>
+            <!-- Full Return -->
+            <div class="return"><a href="#start">Return to top <i class="fa fa-level-up"></i></a></div>
+            <!-- Mobile Return -->
+            <div class="return-mobile"><a href="#start-mobile">Return to top <i class="fa fa-level-up"></i></a></div>
             <!-- / End Undiscovered Talent -->
             
             <!-- DJ Section - refer to rock-star.html for all html code or rock-star.scss for styles -->
-             <div data-ng-include="'partials/dj.html'"></div> 
+             <div data-ng-include="'partials/dj.html'"></div>
+            <!-- Full Return -->
+            <div class="return"><a href="#start">Return to top <i class="fa fa-level-up"></i></a></div>
+            <!-- Mobile Return -->
+            <div class="return-mobile"><a href="#start-mobile">Return to top <i class="fa fa-level-up"></i></a></div>
             <!-- / End DJ -->
             
             <div class="clear"></div>

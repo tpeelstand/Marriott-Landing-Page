@@ -6,7 +6,7 @@
     position: relative;
     @include gradient ($from-color, $to-color);
     
-      .mobile-logo-wrapper {
+    .mobile-logo-wrapper {
             padding: 0; 
             margin: 0 auto;
             width: 100%;   
@@ -71,6 +71,11 @@
     }
 }
 
+@media (min-width: 300px) and (max-width: 991px) {
+    .social {
+        display: none;   
+    }
+}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 992px) {
 .mobile-logo {
@@ -98,5 +103,18 @@
     }
     .mobile-back {
         display: none;   
-    }    
+    }
+    .social {
+        float: right;
+        display: block;
+        margin: .4em auto 0;
+        padding: 0;
+        p {
+            color: #eee;
+            
+            a {
+                color: #eee;    
+            }
+        }
+    }
 }
