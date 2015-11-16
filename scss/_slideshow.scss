@@ -1,0 +1,558 @@
+/* SMALL MOBILE DEVICES */
+@media (min-width: 300px) and (max-width: 444px) {
+    .slider-wrapper {
+        width: 100%;
+        background: #FFF;
+        margin: .5em auto 0;
+        padding: 0;
+
+        .slider-inner {
+            width: 92%;
+            background: #FFF;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            
+            /* OVERLAY AND TEXT ON TOP */
+            .overlay-container {
+                background: #1b1b1b;
+                opacity: .8;
+                width: 100%;
+                padding: 1% 0;
+                position: absolute;
+                top: 2.5%;
+                
+                .topline {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 45%;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .city {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 75%;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .tagline {
+                    width: 50%;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 45%;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+            }
+            
+            /* BUTTONS */
+            button {
+                min-width: 75px;
+                max-width: 250px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 400;
+                font-size: 50%;
+                padding: 1% 0;
+                border: 0;
+                border-radius: 0;
+            }
+            /* Button Positioning */
+            a .button1 {
+                position: absolute; 
+                bottom: 12.5%;
+                left: 10%;    
+            }
+            a .button2 {
+                position: absolute; 
+                bottom: 12.5%;
+                left: 40%;    
+            }
+            a .button3 {
+                position: absolute; 
+                bottom: 12.5%;
+                left: 70%;    
+            }
+            /* Button Color */
+            .button-blue {
+                background: #FFF;
+                color: #1b1b1b; 
+                &:hover {
+                    background: #496fb5;
+                    color: #FFF;
+                }    
+            }
+            .button-green {
+                
+            }
+            .button-purple {
+                
+            }
+            .button-gold {
+                
+            }
+            .button-grey {
+                
+            }
+            .button-red {
+                
+            }
+            .button-teal {
+                
+            }
+
+        }
+    }
+}
+
+
+/* LARGE PHONE AND MOBILE DEVICES */
+@media (min-width: 445px) and (max-width: 767px) {
+    .slider-wrapper {
+        width: 100%;
+        background: #FFF;
+        margin: .5em auto 0;
+        padding: 0;
+
+        .slider-inner {
+            width: 92%;
+            background: #FFF;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            
+            /* OVERLAY AND TEXT ON TOP */
+            .overlay-container {
+                background: #1b1b1b;
+                opacity: .8;
+                width: 100%;
+                padding: 1% 0;
+                position: absolute;
+                top: 2.5%;
+                
+                .topline {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 55%;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .city {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 85%;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .tagline {
+                    width: 55%;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 55%;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+            }
+            
+            /* BUTTONS */
+            button {
+                min-width: 75px;
+                max-width: 250px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 400;
+                font-size: 50%;
+                padding: 1% 0;
+                border: 0;
+                border-radius: 0;
+            }
+            /* Button Positioning */
+            a .button1 {
+                position: absolute; 
+                bottom: 12.5%;
+                left: 10%;    
+            }
+            a .button2 {
+                position: absolute; 
+                bottom: 12.5%;
+                left: 40%;    
+            }
+            a .button3 {
+                position: absolute; 
+                bottom: 12.5%;
+                left: 70%;    
+            }
+            /* Button Color */
+            .button-blue {
+                background: #FFF;
+                color: #1b1b1b; 
+                &:hover {
+                    background: #496fb5;
+                    color: #FFF;
+                }    
+            }
+            .button-green {
+                
+            }
+            .button-purple {
+                
+            }
+            .button-gold {
+                
+            }
+            .button-grey {
+                
+            }
+            .button-red {
+                
+            }
+            .button-teal {
+                
+            }
+
+        }
+    }
+}
+
+/* SMALL TABLETS DEVICES */
+@media (min-width: 768px) and (max-width: 991px) {
+    .slider-wrapper {
+        width: 100%;
+        background: #FFF;
+        margin: .5em auto 0 .3em;
+        padding: 0;
+
+        .slider-inner {
+            width: 95.5%;
+            background: #FFF;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            
+            /* OVERLAY AND TEXT ON TOP */
+            .overlay-container {
+                background: #1b1b1b;
+                opacity: .8;
+                width: 100%;
+                padding: 1em 0;
+                position: absolute;
+                top: 1em;
+                
+                .topline {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 1em;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .city {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 2em;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .tagline {
+                    width: 55%;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 1em;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+            }
+            /* BUTTONS FOR SLIDER */
+            button {
+                width: 22.5%;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 400;
+                font-size: 75%;
+                padding: 1em;
+                border: 0;
+                border-radius: 0;
+            }
+            /* Button Positioning */
+            .button1 {
+                position: absolute; 
+                bottom: 10%;
+                left: 8%;
+            }
+            a .button2 {
+                position: absolute; 
+                bottom:  10%;
+                left: 38%;    
+            }
+            a .button3 {
+                position: absolute; 
+                bottom:  10%;
+                left: 68%;    
+            }
+            /* Button Color */
+            .button-blue {
+                background: #FFF;
+                color: #1b1b1b; 
+                &:hover {
+                    background: #496fb5;
+                    color: #FFF;
+                } 
+                &:active {
+                    background: #496fb5;
+                    color: #FFF;    
+                }
+            }
+            .button-green {
+                
+            }
+            .button-purple {
+                
+            }
+            .button-gold {
+                
+            }
+            .button-grey {
+                
+            }
+            .button-red {
+                
+            }
+            .button-teal {
+                
+            }
+        }
+    }
+}
+
+/* TABLET STYLE DEVICES */
+
+@media (min-width: 992px) and (max-width: 1279px) {
+    .slider-wrapper {
+        width: 100%;
+        background: #FFF;
+        margin: .5em auto 0 .3em;
+        padding: 0;
+
+        .slider-inner {
+            width: 95.5%;
+            background: #FFF;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            
+            /* OVERLAY AND TEXT ON TOP */
+            .overlay-container {
+                background: #1b1b1b;
+                opacity: .8;
+                width: 100%;
+                padding: 2em 0;
+                position: absolute;
+                top: 2em;
+                
+                .topline {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 1.250em;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .city {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 2.500em;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .tagline {
+                    width: 55%;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 1.250em;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+            }
+            /* BUTTONS FOR SLIDER */
+            button {
+                width: 22.5%;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 400;
+                font-size: 1.250em;
+                padding: 1em;
+                border: 0;
+                border-radius: 0;
+            }
+            /* Button Positioning */
+            .button1 {
+                position: absolute; 
+                bottom: 10%;
+                left: 8%;
+            }
+            a .button2 {
+                position: absolute; 
+                bottom:  10%;
+                left: 38%;    
+            }
+            a .button3 {
+                position: absolute; 
+                bottom:  10%;
+                left: 68%;    
+            }
+            /* Button Color */
+            .button-blue {
+                background: #FFF;
+                color: #1b1b1b; 
+                &:hover {
+                    background: #496fb5;
+                    color: #FFF;
+                } 
+                &:active {
+                    background: #496fb5;
+                    color: #FFF;    
+                }
+            }
+            .button-green {
+                
+            }
+            .button-purple {
+                
+            }
+            .button-gold {
+                
+            }
+            .button-grey {
+                
+            }
+            .button-red {
+                
+            }
+            .button-teal {
+                
+            }
+        }
+    }
+}
+
+
+
+
+/* COMPUTER STYLES */
+
+@media (min-width: 1280px) {
+    .slider-wrapper {
+        width: 100%;
+        background: #FFF;
+        margin: .5em auto 0 .3em;
+        padding: 0;
+
+        .slider-inner {
+            width: 95.5%;
+            background: #FFF;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            
+            /* OVERLAY AND TEXT ON TOP */
+            .overlay-container {
+                background: #1b1b1b;
+                opacity: .8;
+                width: 100%;
+                padding: 2em 0;
+                position: absolute;
+                top: 2em;
+                
+                .topline {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 1.250em;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .city {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 2.500em;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                .tagline {
+                    width: 55%;
+                    text-align: center;
+                    color: #FFF;
+                    font-size: 1.250em;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+            }
+            /* BUTTONS FOR SLIDER */
+            button {
+                width: 22.5%;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 400;
+                font-size: 1.250em;
+                padding: 1em;
+                border: 0;
+                border-radius: 0;
+            }
+            /* Button Positioning */
+            .button1 {
+                position: absolute; 
+                bottom: 3.5em;
+                left: 8em;
+            }
+            a .button2 {
+                position: absolute; 
+                bottom:  3.5em;
+                left: 23em;    
+            }
+            a .button3 {
+                position: absolute; 
+                bottom:  3.5em;
+                left: 38em;    
+            }
+            /* Button Color */
+            .button-blue {
+                background: #FFF;
+                color: #1b1b1b; 
+                &:hover {
+                    background: #496fb5;
+                    color: #FFF;
+                } 
+                &:active {
+                    background: #496fb5;
+                    color: #FFF;    
+                }
+            }
+            .button-green {
+                
+            }
+            .button-purple {
+                
+            }
+            .button-gold {
+                
+            }
+            .button-grey {
+                
+            }
+            .button-red {
+                
+            }
+            .button-teal {
+                
+            }
+        }
+    }
+}
