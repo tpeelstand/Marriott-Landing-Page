@@ -31,7 +31,8 @@
 
 #slideshow-inner-vc>ul>li {
     width: 20%;
-    height: auto;
+    height: 100%;
+    background: #FFF;
     float: left;
     margin: 0 auto;
     padding: 0;
@@ -40,8 +41,8 @@
 
 #slideshow-inner-vc>ul>li>img {
     width: 100%;
-    height: 105%;
-    margin: .25em auto 0;
+    height: 100%;
+    margin: 0 auto;
 }
 
 #slideshow-wrap-vc input[type=radio] {
@@ -58,27 +59,53 @@
     bottom: 10%;
     z-index: 100;
     width: 25%;
-    height: 20%;
-    background-color: rgba(235,235,235,.65);
+    height: 15%;
+    background-color: #FFF;
     cursor: pointer;
-     
+    
+    a {
+        color: #1b1b1b; 
+        
+        &:active {
+            color: #FFF;
+        }
+    }
+    
     p {
-        margin-top: 8%;
-        font-size: 1.5em;
+        margin-top: 6%;
+        font-size: 1.25em;
         text-align: center;
         font-weight: bold;
-        color: #222;
+        color: #1b1b1b;
         text-transform: uppercase;
     }
 }
 
 #slideshow-wrap-vc label:not(.arrows-vc):active { bottom: 10% }
 
-#slideshow-wrap-vc input[type=radio]#button-1-vc:checked~label[for=button-1-vc] { background-color: rgba(255,255,255,.8) }
+#slideshow-wrap-vc input[type=radio]#button-1-vc:checked~label[for=button-1-vc] { 
+    background-color: #57BF9E;
 
-#slideshow-wrap-vc input[type=radio]#button-2-vc:checked~label[for=button-2-vc] { background-color: rgba(255,255,255,.8) }
+    p {
+        color: #FFF;
+    } 
+}
 
-#slideshow-wrap-vc input[type=radio]#button-3-vc:checked~label[for=button-3-vc] { background-color: rgba(255,255,255,.8) }
+#slideshow-wrap-vc input[type=radio]#button-2-vc:checked~label[for=button-2-vc] { 
+    background-color: #57BF9E;
+
+    p {
+        color: #FFF;
+    } 
+}
+
+#slideshow-wrap-vc input[type=radio]#button-3-vc:checked~label[for=button-3-vc] { 
+    background-color: #57BF9E;
+
+    p {
+        color: #FFF;
+    } 
+}
 
 #slideshow-wrap-vc label[for=button-1-vc] { margin-left: -30%; }
 
@@ -96,7 +123,7 @@ label.arrows-vc:hover { opacity: 1 }
 
 label.arrows-vc:active { margin-top: -23px }
 
-input[type=radio]#button-1-vc:checked~.arrows-vc#arrow-2-vc, input[type=radio]#button-2-vc:checked~.arrows-vc#arrow-3-vc, input[type=radio]#button-3-vc:checked~.arrows-vc#arrow-4-vc {
+input[type=radio]#button-1-vc:checked~.arrows-vc#arrow-2-vc, input[type=radio]#button-2-vc:checked~.arrows#arrow-3-vc, input[type=radio]#button-3-vc:checked~.arrows-vc#arrow-4-vc {
     right: -55px;
     display: none;
 }
@@ -132,7 +159,7 @@ input[type=radio]#button-5-vc:checked~.arrows-vc#arrow-4-vc { left: -73px }
     display: none;
 }
 
-#slideshow-inner-vc>ul>li .description label { opacity: 1 }
+#slideshow-inner-vc>ul>li .description-vc label { opacity: 1 }
 
 .description-vc input[type=checkbox]:checked~label { opacity: 1 }
 
@@ -154,19 +181,23 @@ input[type=radio]#button-5-vc:checked~.arrows-vc#arrow-4-vc { left: -73px }
     
     h2 {
         margin:  .75em auto;
-        font-size: 500%;
+        font-size: 2.5em;
+        font-weight: 300;
         color: #FFF;
         text-transform: uppercase;
     }
     p {
         width: 45%;
+        font-size: 1.250em;
+        font-weight: 300;
         line-height: 1.2em;
         margin: 0 auto;
         padding: 0;
         color: #FFF;
     }
     .topline-vc {
-        font-size: 1.5em;
+        font-size: 1.250em;
+        font-weight: 400;
         text-transform: uppercase;
     }
     
@@ -174,40 +205,85 @@ input[type=radio]#button-5-vc:checked~.arrows-vc#arrow-4-vc { left: -73px }
 
 .description-vc input[type=checkbox]:checked~.description-text-vc { opacity: 1 }
 
-@media (min-width: 320px) and (max-width: 475px) {
+@media (min-width: 320px) and (max-width: 480px) {
     #slideshow-wrap-vc {
         width: 91.5%;
         height: auto;
         margin: 1em auto 0;
     }
-    
+     /* Slideshow on mobile */
+    #slideshow-inner-vc {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+    position: relative;
+}
+
+#slideshow-inner-vc>ul {
+    list-style: none;
+    height: 180px;
+    width: 500%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    left: 0px;
+    -webkit-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#slideshow-inner-vc>ul>li {
+    width: 20%;
+    height: 180px;
+    background: #FFF;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+#slideshow-inner-vc>ul>li>img {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+}
+    /* / Slideshow */
     .description-vc .description-text-vc {
         padding-top: .5em;
         padding-bottom: .5em;
         top: 10px;
-            h2 {
+        h2 {
             margin:  .35em auto;
-            font-size: 150%;
+            font-size: 1.250em;
+            font-weight: 400;
             color: #FFF;
             text-transform: uppercase;
         }
         p {
             width: 25em;
-            font-size: 60%;
+            font-size: .6250em;
+            font-weight: 300;
             line-height: 1.5em;
             margin: 0 auto;
             padding: 0;
             color: #FFF;
         }
         .topline-vc {
-            font-size: .75em;
+            font-size: .6250em;
+            font-weight: 400;
             text-transform: uppercase;
         }
     }
     
     #slideshow-wrap-vc label:not(.arrows-vc):not(.show-description-label-vc) {
-            
-                p {font-size: .5em;}
+                padding: .25em 0;
+        
+                p {
+                    font-size: .5em;
+                    margin-top: 0;
+                }
         }
 }
 
@@ -263,22 +339,25 @@ input[type=radio]#button-5-vc:checked~.arrows-vc#arrow-4-vc { left: -73px }
         padding-top: .5em;
         padding-bottom: .5em;
         top: 10px;
-            h2 {
+        h2 {
             margin:  .35em auto;
-            font-size: 150%;
+            font-size: 1.250em;
+            font-weight: 400;
             color: #FFF;
             text-transform: uppercase;
         }
         p {
             width: 25em;
-            font-size: 60%;
+            font-size: .6250em;
+            font-weight: 300;
             line-height: 1.5em;
             margin: 0 auto;
             padding: 0;
             color: #FFF;
         }
         .topline-vc {
-            font-size: .75em;
+            font-size: .6250em;
+            font-weight: 400;
             text-transform: uppercase;
         }
     }
@@ -295,8 +374,8 @@ input[type=radio]#button-5-vc:checked~.arrows-vc#arrow-4-vc { left: -73px }
 
 @media (min-width: 1200px) {
     #slideshow-wrap-vc {
-    width: 95.5%;
-    margin: 1em auto 0 2em;
-}
+        width: 95.5%;
+        margin: 1em auto 0 2em;
+    }
 }
 

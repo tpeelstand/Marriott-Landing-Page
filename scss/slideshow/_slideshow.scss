@@ -31,7 +31,8 @@
 
 #slideshow-inner>ul>li {
     width: 20%;
-    height: auto;
+    height: 100%;
+    background: #FFF;
     float: left;
     margin: 0 auto;
     padding: 0;
@@ -40,8 +41,8 @@
 
 #slideshow-inner>ul>li>img {
     width: 100%;
-    height: 105%;
-    margin: .25em auto 0;
+    height: 100%;
+    margin: 0 auto;
 }
 
 #slideshow-wrap input[type=radio] {
@@ -58,27 +59,53 @@
     bottom: 10%;
     z-index: 100;
     width: 25%;
-    height: 20%;
-    background-color: rgba(235,235,235,.8);
+    height: 15%;
+    background-color: #FFF;
     cursor: pointer;
-     
+    
+    a {
+        color: #1b1b1b; 
+        
+        &:active {
+            color: #FFF;
+        }
+    }
+    
     p {
-        margin-top: 8%;
-        font-size: 1.5em;
+        margin-top: 6%;
+        font-size: 1.25em;
         text-align: center;
         font-weight: bold;
-        color: #222;
+        color: #1b1b1b;
         text-transform: uppercase;
     }
 }
 
 #slideshow-wrap label:not(.arrows):active { bottom: 10% }
 
-#slideshow-wrap input[type=radio]#button-1:checked~label[for=button-1] { background-color: rgba(255,255,255,.8) }
+#slideshow-wrap input[type=radio]#button-1:checked~label[for=button-1] { 
+    background-color: #57BF9E;
 
-#slideshow-wrap input[type=radio]#button-2:checked~label[for=button-2] { background-color: rgba(255,255,255,.8) }
+    p {
+        color: #FFF;
+    } 
+}
 
-#slideshow-wrap input[type=radio]#button-3:checked~label[for=button-3] { background-color: rgba(255,255,255,.8) }
+#slideshow-wrap input[type=radio]#button-2:checked~label[for=button-2] { 
+    background-color: #57BF9E;
+
+    p {
+        color: #FFF;
+    } 
+}
+
+#slideshow-wrap input[type=radio]#button-3:checked~label[for=button-3] { 
+    background-color: #57BF9E;
+
+    p {
+        color: #FFF;
+    } 
+}
 
 #slideshow-wrap label[for=button-1] { margin-left: -30%; }
 
@@ -154,19 +181,23 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
     
     h2 {
         margin:  .75em auto;
-        font-size: 500%;
+        font-size: 2.5em;
+        font-weight: 300;
         color: #FFF;
         text-transform: uppercase;
     }
     p {
         width: 45%;
+        font-size: 1.250em;
+        font-weight: 300;
         line-height: 1.2em;
         margin: 0 auto;
         padding: 0;
         color: #FFF;
     }
     .topline {
-        font-size: 1.5em;
+        font-size: 1.250em;
+        font-weight: 400;
         text-transform: uppercase;
     }
     
@@ -174,40 +205,87 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
 
 .description input[type=checkbox]:checked~.description-text { opacity: 1 }
 
-@media (min-width: 320px) and (max-width: 475px) {
+@media (min-width: 320px) and (max-width: 480px) {
     #slideshow-wrap {
         width: 91.5%;
         height: auto;
         margin: 1em auto 0;
     }
     
+    /* Slideshow on mobile */
+    #slideshow-inner {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+    position: relative;
+}
+
+#slideshow-inner>ul {
+    list-style: none;
+    height: 180px;
+    width: 500%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    left: 0px;
+    -webkit-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#slideshow-inner>ul>li {
+    width: 20%;
+    height: 180px;
+    background: #FFF;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+#slideshow-inner>ul>li>img {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+}
+    /* / Slideshow */
+    
     .description .description-text {
         padding-top: .5em;
         padding-bottom: .5em;
         top: 10px;
-            h2 {
+        h2 {
             margin:  .35em auto;
-            font-size: 150%;
+            font-size: 1.250em;
+            font-weight: 400;
             color: #FFF;
             text-transform: uppercase;
         }
         p {
             width: 25em;
-            font-size: 60%;
+            font-size: .6250em;
+            font-weight: 300;
             line-height: 1.5em;
             margin: 0 auto;
             padding: 0;
             color: #FFF;
         }
         .topline {
-            font-size: .75em;
+            font-size: .6250em;
+            font-weight: 400;
             text-transform: uppercase;
         }
     }
     
     #slideshow-wrap label:not(.arrows):not(.show-description-label) {
-            
-                p {font-size: .5em;}
+                padding: .25em 0;
+        
+                p {
+                    font-size: .5em;
+                    margin-top: 0;
+                }
         }
 }
 
@@ -263,22 +341,25 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
         padding-top: .5em;
         padding-bottom: .5em;
         top: 10px;
-            h2 {
+        h2 {
             margin:  .35em auto;
-            font-size: 150%;
+            font-size: 1.250em;
+            font-weight: 400;
             color: #FFF;
             text-transform: uppercase;
         }
         p {
             width: 25em;
-            font-size: 60%;
+            font-size: .6250em;
+            font-weight: 300;
             line-height: 1.5em;
             margin: 0 auto;
             padding: 0;
             color: #FFF;
         }
         .topline {
-            font-size: .75em;
+            font-size: .6250em;
+            font-weight: 400;
             text-transform: uppercase;
         }
     }
@@ -295,8 +376,8 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
 
 @media (min-width: 1200px) {
     #slideshow-wrap {
-    width: 95.5%;
-    margin: 1em auto 0 2em;
-}
+        width: 95.5%;
+        margin: 1em auto 0 2em;
+    }
 }
 

@@ -23,7 +23,7 @@
     }
     
     .image-row {
-
+       
         img {
             width: 100%;    
             }
@@ -39,18 +39,25 @@
 .message-wrapper-mobile {
     width: 100%;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 0 0 .5em 0;
     display: block;
     
     h3 {
         text-align: center;
-        font-size: 1.55em;
+        font-size: 1em;
+        line-height: 16px;
+        margin: 0 auto;
+        padding: .25em 2em;
+        
+        a {
+            font-size: .875em;     
+        }
     }
     
 }
 .mobile-circle {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     position: relative;
     display: block;
@@ -58,8 +65,8 @@
     i {
         color: #FFF;
         position: absolute;
-        top: 15px;
-        left: 15px;
+        top: .3em;
+        left: .3em;
     }
 }
 /** Circle Colors **/
@@ -120,12 +127,12 @@
 
 @media (min-width: 320px) and (max-width: 375px) {
     .mobile-circle {
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         position: relative;
         display: block;
-        margin-left: 40%;
+        margin-left: 42%;
     }
 }
 
