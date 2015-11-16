@@ -17,14 +17,20 @@
         left: .5em;
         top: .5em;
     }
-    .mobile-back {
-        font-size: .75em;
-        position: absolute;
-        top: .75em;
-        right: .75em;
-        a {
+      
+      .social {
+        float: right;
+        display: block;
+        margin: .4em auto 0;
+        padding: 0;
+        text-transform: uppercase;
+        p {
             color: #eee;
-            text-decoration: none;
+            
+            a {
+                color: #eee;
+                margin: 0 .25em;
+            }
         }
     }
 }
@@ -65,17 +71,9 @@
                 display: block
             }
         }
-        .mobile-back {
-            display: block;   
-        }
     }
 }
 
-@media (min-width: 300px) and (max-width: 991px) {
-    .social {
-        display: none;   
-    }
-}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 992px) {
 .mobile-logo {
@@ -99,22 +97,6 @@
             margin-left: -150px;
             margin-top: 8px;
             display: block
-        }
-    }
-    .mobile-back {
-        display: none;   
-    }
-    .social {
-        float: right;
-        display: block;
-        margin: .4em auto 0;
-        padding: 0;
-        p {
-            color: #eee;
-            
-            a {
-                color: #eee;    
-            }
         }
     }
 }
