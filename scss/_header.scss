@@ -21,15 +21,28 @@
       .social {
         float: right;
         display: block;
-        margin: .4em auto 0;
+        margin: .4em 5% 0 0;
         padding: 0;
         text-transform: uppercase;
         p {
+            float: left;
             color: #eee;
-            
+            font-weight: 800;
+            font-size: .75em;
+            padding-right: .5em;
+        }
+        .icons {
+            margin: 0 auto;
+            padding: 0;
+            float: left;
             a {
                 color: #eee;
-                margin: 0 .25em;
+                margin: .5em .25em 0;
+
+                i {
+                    font-size: 1.5em;
+                    margin-top: .5em;
+                }
             }
         }
     }
