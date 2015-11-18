@@ -1116,7 +1116,9 @@ body {
 .borders {
   width: 100%;
   border-top: 1px solid #CCC;
-  border-bottom: 1px solid #CCC; }
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 2em;
+  margin-top: 1em; }
 
 .banner-adjustment {
   margin-top: 3.5em; }
@@ -1180,6 +1182,9 @@ a img {
     text-align: center;
     margin-top: 5em;
     margin-right: 8em; }
+    .return-mobile .navicon {
+      padding: 0 1em;
+      text-align: center; }
     .return-mobile a {
       color: #1b1b1b;
       font-size: .9em; } }
@@ -1208,7 +1213,9 @@ a img {
     margin-right: 8em; }
     .return a {
       color: #1b1b1b;
-      font-size: .9em; } }
+      font-size: .9em; }
+    .return p {
+      text-align: center; } }
 /*******************************
     Mixins
 ********************************/
@@ -2408,13 +2415,12 @@ header {
       font-size: .875em; }
 
 .mobile-circle {
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   position: relative;
   display: block;
-  margin: auto;
-  margin-top: .75em; }
+  margin: .75em auto 0; }
 
 .message-wrapper {
   display: none; }
@@ -2444,12 +2450,12 @@ header {
 /** FULL WIDTH VIEW MEDIA QUERY **/
 @media (min-width: 320px) and (max-width: 375px) {
   .mobile-circle {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     position: relative;
     display: block;
-    margin-left: 42%; } }
+    margin: .75em auto 0; } }
 @media (min-width: 992px) {
   .banner-wrapper {
     margin-top: 5em; }
@@ -2739,7 +2745,7 @@ header {
         text-transform: uppercase;
         text-align: center;
         font-weight: 400;
-        font-size: 1.250em;
+        font-size: 100%;
         padding: 1em;
         border: 0;
         border-radius: 0; }
@@ -3073,12 +3079,14 @@ a .button-teal {
 
   .borders {
     width: 95.5%;
-    margin-left: 2em; }
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 2.5em; }
 
   .message-wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 1em 0;
     display: block; }
     .message-wrapper h3 {
       font-size: 1.25em;
@@ -3090,7 +3098,7 @@ a .button-teal {
     display: inline; }
     .circle img {
       border: 0;
-      width: 6%;
+      width: 2em;
       margin-bottom: -.75em;
       margin-right: .5em; }
 
@@ -3134,12 +3142,14 @@ a .button-teal {
 @media (min-width: 1200px) {
   .borders {
     width: 95.5%;
-    margin-left: 2em; }
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 2.5em; }
 
   .message-wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 0 0 .5em 0;
     display: block; }
     .message-wrapper h3 {
       font-size: 1.65em;
@@ -3151,7 +3161,7 @@ a .button-teal {
     display: inline; }
     .circle img {
       border: 0;
-      width: 6%;
+      width: 2em;
       margin-bottom: -.75em;
       margin-right: .5em; }
 
