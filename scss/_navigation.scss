@@ -385,6 +385,7 @@
             background-color: #496fb5;
             background-image: url(../images/navigation.gif)  !important;
             background-size: 1000%;
+            border: 2px solid #FFF;
             color: #496fb5;
             font-weight: bold;
             font-size: .85em;
@@ -404,6 +405,7 @@
             background-image: url(../images/navigation.gif)  !important;
             background-position: 17% 0 !important;
             background-size: 1000%;
+            border: 2px solid #FFF;
             color: #44A472;
             font-weight: bold;
             font-size: .85em;
@@ -426,6 +428,7 @@
             background-size: 1000% !important;
             background-position: 33.5% 0 !important;
             background-size: 1000%;
+            border: 2px solid #FFF;
             color: #6F489C;
             font-weight: bold;
             font-size: .85em;
@@ -446,15 +449,16 @@
             background-color: #F59120;
             background-image: url(../images/navigation.gif)  !important; 
             background-size: 1000% !important;
-            background-position: 50% 0 !important;
+            background-position: 50% -1px !important;
             background-size: 1000% !important;
+            border: 2px solid #FFF;
             color: #F59120;
             font-weight: bold;
             font-size: .85em;
                 &:hover {
                     background-color: #F59120 !important;
                     background-image: url(../images/navigation.gif) !important;
-                    background-position: 50% 0 !important;
+                    background-position: 50% -1px !important;
                     background-size: 1000% !important;
                     color: #F59120 !important;
                 }
@@ -468,15 +472,16 @@
             background-color: #58595B;
             background-image: url(../images/navigation.gif)  !important;
             background-size: 1000% !important;
-            background-position: 66.5% 0 !important;
+            background-position: 66.5% -1px !important;
             background-size: 1000%;
+            border: 2px solid #FFF;
             color: #58595B;
             font-weight: bold;
             font-size: .85em;
                 &:hover {
                     background-color: #58595B !important;
                     background-image: url(../images/navigation.gif) !important;
-                    background-position: 66.5% 0 !important;
+                    background-position: 66.5% -1px !important;
                     color: #58595B !important;
                 }
              span {
@@ -489,15 +494,16 @@
             background-color: #D23A45;
             background-image: url(../images/navigation.gif)  !important; 
             background-size: 1000% !important;
-            background-position: 83.5% 0 !important;
+            background-position: 83.5% -1px !important;
             background-size: 1000%;
+            border: 2px solid #FFF;
             color: #D23A45;
             font-weight: bold;
             font-size: .85em;
                 &:hover {
                     background-color: #D23A45 !important;
                     background-image: url(../images/navigation.gif) !important;
-                    background-position: 83.5% 0 !important;
+                    background-position: 83.5% -1px !important;
                     color: #D23A45 !important;
                 }
              span {
@@ -510,15 +516,16 @@
             background-color: #57BF9E;
             background-image: url(../images/navigation.gif)  !important; 
             background-size: 1000% !important;
-            background-position: 99.6% 0 !important;
+            background-position: 99.6% -1px !important;
             background-size: 1000%;
+            border: 2px solid #FFF;
             color: #57BF9E;
             font-weight: bold;
             font-size: .85em;
                 &:hover {
                     background: #57BF9E !important;
                     background-image: url(../images/navigation.gif) !important;
-                    background-position: 99.6% 0 !important;
+                    background-position: 99.6% -1px !important;
                     background-size: 1000% !important;
                     color: #57BF9E !important;
                 }
@@ -656,9 +663,11 @@
             background-color: #496fb5;
             background-image: url(../images/navigation.gif)  !important;
             background-size: 1000% !important;
+            backgropund-position: -2px 0 !important;
             color: #496fb5;
             font-weight: bold;
             font-size: .85em;
+            border: 2px solid #FFF;
             &:hover {
                 background-color: #496fb5 !important;
                 background-size: 1000% !important;
@@ -677,6 +686,7 @@
             background-size: 1000% !important;
             color: #44A472;
             font-weight: bold;
+            border: 2px solid #FFF;
             font-size: .85em;
                 &:hover {
                     background: #44A472 !important;
@@ -699,6 +709,7 @@
             background-size: 1000% !important;
             color: #6F489C;
             font-weight: bold;
+            border: 2px solid #FFF;
             font-size: .85em;
                 &:hover {
                     background-color: #6F489C !important;
@@ -721,6 +732,7 @@
             background-size: 1000% !important;
             color: #F59120;
             font-weight: bold;
+            border: 2px solid #FFF;
             font-size: .85em;
                 &:hover {
                     background-color: #F59120 !important;
@@ -743,6 +755,7 @@
             background-size: 1000% !important;
             color: #58595B;
             font-weight: bold;
+            border: 2px solid #FFF;
             font-size: .85em;
                 &:hover {
                     background-color: #58595B !important;
@@ -764,6 +777,7 @@
             background-position: 83.5% 0 !important;
             background-size: 1000% !important;
             color: #D23A45;
+            border: 2px solid #FFF;
             font-weight: bold;
             font-size: .85em;
                 &:hover {
@@ -785,6 +799,7 @@
             background-size: 1000% !important;
             background-position: 99.6% 0 !important;
             background-size: 1000%;
+            border: 2px solid #FFF;
             color: #57BF9E;
             font-weight: bold;
             font-size: .85em;
@@ -865,6 +880,7 @@
     background-image: url(../images/navigation.gif)  !important;
     background-size: 1000% !important;
     background-position: -4px 0 !important;
+    border: 2px solid #FFF;
     color: #496fb5;
     font-weight: bold;
     &:hover {
@@ -876,8 +892,8 @@
     
     span {
         position: absolute;
-        bottom: 2.5em;
-        left: 3.5em;    
+        bottom: 1.1em;
+        left: 4.5em;    
     }
 }
 .green {
@@ -885,6 +901,7 @@
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
     background-position: -145px 0 !important;
+    border: 2px solid #FFF;
     color: #44A472;
     font-weight: bold;
         &:hover {
@@ -896,102 +913,107 @@
         }
      span {
         position: absolute;
-        bottom: 2.5em;
-        left: 11em;    
+        bottom: 1.1em;
+        left: 12.35em;    
     }
 }
 .purple {
     background-color: #6F489C;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -287px 0 !important;
+    background-position: -287px -1px !important;
     background-size: 1000% !important;
+    border: 2px solid #FFF;
     color: #6F489C;
     font-weight: bold;
         &:hover {
             background-color: #6F489C !important;
             background-image: url(../images/navigation.gif) !important;
-            background-position: -287px 0 !important;
+            background-position: -287px -1px !important;
             background-size: 1000% !important;
             color: #6F489C !important;
     } 
      span {
         position: absolute;
-        bottom: 2.5em;
-        left: 19em;    
+        bottom: 1.1em;
+        left: 20em;    
     }
 }
 .gold {
     background-color: #F59120;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
-    background-position: -427px 0 !important;
+    background-position: -427px -1px !important;
+    border: 2px solid #FFF;
     color: #F59120;
     font-weight: bold;
         &:hover {
             background-color: #F59120 !important;
             background-image: url(../images/navigation.gif) !important;
-            background-position: -427px 0 !important;
+            background-position: -427px -1px !important;
             background-size: 1000% !important;
             color: #F59120 !important;
         }
      span {
         position: absolute;
-        bottom: 2.5em;
-        left: 27em;    
+        bottom: 1.1em;
+        left: 27.5em;    
     }
 }
 .grey {
     background-color: #58595B;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -570px 0 !important;
+    background-position: -570px -1px !important;
     background-size: 1000% !important;
+    border: 2px solid #FFF;
     color: #58595B;
     font-weight: bold;
         &:hover {
             background-color: #58595B !important;
             background-image: url(../images/navigation.gif) !important;
-            background-position: -570px 0 !important;
+            background-position: -570px -1px !important;
             background-size: 1000% !important;
             color: #58595B !important;
         }
      span {
         position: absolute;
-        bottom: 2.5em;
-        right: 21em;    
+        bottom: 1.1em;
+        right: 20.5em;    
     }
 }
 .red {
     background-color: #D23A45;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
-    background-position: -711px 0 !important;
+    background-position: -711px -1px !important;
+    border: 2px solid #FFF;
     color: #D23A45;
     font-weight: bold;
         &:hover {
             background-color: #D23A45 !important;
             background-image: url(../images/navigation.gif) !important;
             background-size: 1000% !important;
-            background-position: -711px 0 !important;
+            background-position: -711px -1px !important;
             color: #D23A45 !important;
         }
      span {
         position: absolute;
-        bottom: 2.5em;
-        right: 9.75em;    
+        bottom: 1.1em;
+        right: 11.25em;    
     }
 }
 .teal {
     background-color: #57BF9E;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
-    background-position: -852px 0 !important;
+    background-position: -852px -1px !important;
+    border: 2px solid #FFF;
     color: #57BF9E;
     font-weight: bold;
         &:hover {
             background: #57BF9E !important;
             background-image: url(../images/navigation.gif) !important;
             background-size: 1000% !important;
-            background-position: -852px 0 !important;
+            background-position: -852px -1px !important;
             color: #57BF9E !important;
         }
      span {
@@ -1066,17 +1088,20 @@
 .blue {
     background-color: #496fb5;
     background-image: url(../images/navigation.gif)  !important;
+    background-position: -2px 0 !important;
     color: #496fb5;
     font-weight: bold;
+    border: 2px solid #FFF;
     &:hover {
         background-color: #496fb5 !important;
+        background-position: -2px 0 !important;
         color: #496fb5 !important;
     }
     
     span {
         position: absolute;
-        bottom: 1em;
-        left: 5em;    
+        bottom: -.5em;
+        left: 6em;    
     }
 }
 .green {
@@ -1084,6 +1109,7 @@
     background-image: url(../images/navigation.gif) !important;
     background-position: -173px 0 !important;
     color: #44A472;
+    border: 2px solid #FFF;
     font-weight: bold;
         &:hover {
             background: #44A472 !important;
@@ -1093,92 +1119,97 @@
         }
      span {
         position: absolute;
-        bottom: 1em;
-        left: 14.75em;    
+        bottom: -.5em;
+        left: 16.15em;    
     }
 }
 .purple {
     background-color: #6F489C;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -345px 0 !important;
+    background-position: -346px -1px !important;
     color: #6F489C;
+    border: 2px solid #FFF;
     font-weight: bold;
         &:hover {
             background-color: #6F489C !important;
             background-image: url(../images/navigation.gif) !important;
-            background-position: -345px 0 !important;
+            background-position: -346px -1px !important;
             color: #6F489C !important;
     } 
      span {
         position: absolute;
-        bottom: 1em;
-        left: 25.25em;    
+        bottom: -.5em;
+        left: 26em;    
     }
 }
 .gold {
     background-color: #F59120;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -516px 0 !important;
+    background-position: -516px -1px !important;
+    border: 2px solid #FFF;
     color: #F59120;
     font-weight: bold;
         &:hover {
             background-color: #F59120 !important;
             background-image: url(../images/navigation.gif) !important;
-            background-position: -516px 0 !important;
+            background-position: -516px -1px !important;
             color: #F59120 !important;
         }
      span {
         position: absolute;
-        bottom: 1em;
-        left: 35.4em;    
+        bottom: -.5em;
+        left: 36.3em;    
     }
 }
 .grey {
     background-color: #58595B;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -687px 0 !important;
+    background-position: -687px -1px !important;
+    border: 2px solid #FFF;
     color: #58595B;
     font-weight: bold;
         &:hover {
             background-color: #58595B !important;
             background-image: url(../images/navigation.gif) !important;
-            background-position: -687px 0 !important;
+            background-position: -687px -1px !important;
             color: #58595B !important;
         }
      span {
         position: absolute;
-        bottom: 1em;
-        right: 24.2em;    
+        bottom: -.5em;
+        right: 23.8em;    
     }
 }
 .red {
     background-color: #D23A45;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -858px 0 !important;
+    background-position: -858px -1px !important;
+    border: 2px solid #FFF;
     color: #D23A45;
     font-weight: bold;
         &:hover {
             background-color: #D23A45 !important;
             background-image: url(../images/navigation.gif) !important;
-            background-position: -858px 0 !important;
+            background-position: -858px -1px !important;
             color: #D23A45 !important;
         }
      span {
         position: absolute;
-        bottom: 1em;
-        right: 10.75em;    
+        bottom: -.5em;
+        right: 12em;    
     }
 }
 .teal {
     background-color: #57BF9E;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -1030px 0 !important;
+    background-position: -1030px -1px !important;
+    border: 2px solid #FFF;
     color: #57BF9E;
     font-weight: bold;
         &:hover {
             background: #57BF9E !important;
             background-image: url(../images/navigation.gif) !important;
-            background-position: -1030px 0 !important;
+            background-position: -1030px -1px !important;
             color: #57BF9E !important;
         }
      span {

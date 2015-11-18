@@ -6,7 +6,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 3500);
+        }, 2000); // ADJUSTS SPEED OF SCROLLING TO AND FROM SECTIONS //
         return false;
       }
     }

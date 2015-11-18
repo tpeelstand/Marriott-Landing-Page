@@ -6,110 +6,24 @@
     position: relative;
     @include gradient ($from-color, $to-color);
     
-    .mobile-logo-wrapper {
-            padding: 0; 
-            margin: 0 auto;
-            width: 100%;   
-      }
-    .mobile-logo {
-        width: 8em;
-        position: absolute;
-        left: .5em;
-        top: .5em;
-    }
-      
-      .social {
-        float: right;
-        display: block;
-        margin: .4em 5% 0 0;
-        padding: 0;
-        text-transform: uppercase;
-        p {
-            float: left;
-            color: #eee;
-            font-weight: 800;
-            font-size: .75em;
-            padding-right: .5em;
-        }
-        .icons {
-            margin: 0 auto;
-            padding: 0;
-            float: left;
-            a {
-                color: #eee;
-                margin: .5em .25em 0;
-
-                i {
-                    font-size: 1.5em;
-                    margin-top: .5em;
-                }
-            }
-        }
-    }
-}
-
-/* This is used to center the logo for full width */
-
-    .center {
-        display: none;
-    }
-
-/* Medium devices (desktops, 600px and up) */
-@media (min-width: 600px) and (max-width: 991px) {
-    .mobile-logo-wrapper {
-        padding: 0; 
-        margin: 0 auto;
-        width: 100%;
-        
-        .mobile-logo {
-            display: block;   
-        }
-        .logo-container {
-            width: 100%;
-            display: none;
-            margin: 0 auto;
-            padding: 0;
-
-            i {
-                float: right;    
-            }
-            .center {
-                width: 200px;
-                float: none;
-                position: absolute;
-                left: 60%;
-                top: 0; 
-                margin-left: -150px;
-                margin-top: 8px;
-                display: block
-            }
-        }
-    }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 992px) {
-.mobile-logo {
-        display: none;   
-    }
     .logo-container {
-        width: 100%;
-        display: block;
+        max-width: 1150px;
+        height: 4.1em;
         margin: 0 auto;
-        padding: 0;
         
-        i {
-            float: right;    
+        p {
+            margin: 0 auto;
+            padding: 0;
+            width: 129px;
+            height: 25px;
+            text-align: center;
+            
+            img {
+                padding-top: 1.2em;
+                width: 100%;
+            }
         }
-        .center {
-            width: 200px;
-            float: none;
-            position: absolute;
-            left: 50%;
-            top: 0; 
-            margin-left: -150px;
-            margin-top: 8px;
-            display: block
-        }
+
     }
+    
 }

@@ -1230,87 +1230,20 @@ header {
   background-image: -ms-linear-gradient(top, #6f6f6f, #4d4d4d);
   background-image: -o-linear-gradient(top, #6f6f6f, #4d4d4d);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#6f6f6f', EndColorStr='#4d4d4d')"; }
-  header .mobile-logo-wrapper {
-    padding: 0;
-    margin: 0 auto;
-    width: 100%; }
-  header .mobile-logo {
-    width: 8em;
-    position: absolute;
-    left: .5em;
-    top: .5em; }
-  header .social {
-    float: right;
-    display: block;
-    margin: .4em 5% 0 0;
-    padding: 0;
-    text-transform: uppercase; }
-    header .social p {
-      float: left;
-      color: #eee;
-      font-weight: 800;
-      font-size: .75em;
-      padding-right: .5em; }
-    header .social .icons {
+  header .logo-container {
+    max-width: 1150px;
+    height: 4.1em;
+    margin: 0 auto; }
+    header .logo-container p {
       margin: 0 auto;
       padding: 0;
-      float: left; }
-      header .social .icons a {
-        color: #eee;
-        margin: .5em .25em 0; }
-        header .social .icons a i {
-          font-size: 1.5em;
-          margin-top: .5em; }
+      width: 129px;
+      height: 25px;
+      text-align: center; }
+      header .logo-container p img {
+        padding-top: 1.2em;
+        width: 100%; }
 
-/* This is used to center the logo for full width */
-.center {
-  display: none; }
-
-/* Medium devices (desktops, 600px and up) */
-@media (min-width: 600px) and (max-width: 991px) {
-  .mobile-logo-wrapper {
-    padding: 0;
-    margin: 0 auto;
-    width: 100%; }
-    .mobile-logo-wrapper .mobile-logo {
-      display: block; }
-    .mobile-logo-wrapper .logo-container {
-      width: 100%;
-      display: none;
-      margin: 0 auto;
-      padding: 0; }
-      .mobile-logo-wrapper .logo-container i {
-        float: right; }
-      .mobile-logo-wrapper .logo-container .center {
-        width: 200px;
-        float: none;
-        position: absolute;
-        left: 60%;
-        top: 0;
-        margin-left: -150px;
-        margin-top: 8px;
-        display: block; } }
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 992px) {
-  .mobile-logo {
-    display: none; }
-
-  .logo-container {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    padding: 0; }
-    .logo-container i {
-      float: right; }
-    .logo-container .center {
-      width: 200px;
-      float: none;
-      position: absolute;
-      left: 50%;
-      top: 0;
-      margin-left: -150px;
-      margin-top: 8px;
-      display: block; } }
 /*******************************
     Header Content Styles
 ********************************/
@@ -1665,6 +1598,7 @@ header {
       background-color: #496fb5;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000%;
+      border: 2px solid #FFF;
       color: #496fb5;
       font-weight: bold;
       font-size: .85em; }
@@ -1681,6 +1615,7 @@ header {
       background-image: url(../images/navigation.gif) !important;
       background-position: 17% 0 !important;
       background-size: 1000%;
+      border: 2px solid #FFF;
       color: #44A472;
       font-weight: bold;
       font-size: .85em; }
@@ -1700,6 +1635,7 @@ header {
       background-size: 1000% !important;
       background-position: 33.5% 0 !important;
       background-size: 1000%;
+      border: 2px solid #FFF;
       color: #6F489C;
       font-weight: bold;
       font-size: .85em; }
@@ -1717,15 +1653,16 @@ header {
       background-color: #F59120;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
-      background-position: 50% 0 !important;
+      background-position: 50% -1px !important;
       background-size: 1000% !important;
+      border: 2px solid #FFF;
       color: #F59120;
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .gold:hover {
         background-color: #F59120 !important;
         background-image: url(../images/navigation.gif) !important;
-        background-position: 50% 0 !important;
+        background-position: 50% -1px !important;
         background-size: 1000% !important;
         color: #F59120 !important; }
       #mobile-nav-wrap .gold span {
@@ -1736,15 +1673,16 @@ header {
       background-color: #58595B;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
-      background-position: 66.5% 0 !important;
+      background-position: 66.5% -1px !important;
       background-size: 1000%;
+      border: 2px solid #FFF;
       color: #58595B;
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .grey:hover {
         background-color: #58595B !important;
         background-image: url(../images/navigation.gif) !important;
-        background-position: 66.5% 0 !important;
+        background-position: 66.5% -1px !important;
         color: #58595B !important; }
       #mobile-nav-wrap .grey span {
         position: absolute;
@@ -1754,15 +1692,16 @@ header {
       background-color: #D23A45;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
-      background-position: 83.5% 0 !important;
+      background-position: 83.5% -1px !important;
       background-size: 1000%;
+      border: 2px solid #FFF;
       color: #D23A45;
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .red:hover {
         background-color: #D23A45 !important;
         background-image: url(../images/navigation.gif) !important;
-        background-position: 83.5% 0 !important;
+        background-position: 83.5% -1px !important;
         color: #D23A45 !important; }
       #mobile-nav-wrap .red span {
         position: absolute;
@@ -1772,15 +1711,16 @@ header {
       background-color: #57BF9E;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
-      background-position: 99.6% 0 !important;
+      background-position: 99.6% -1px !important;
       background-size: 1000%;
+      border: 2px solid #FFF;
       color: #57BF9E;
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .teal:hover {
         background: #57BF9E !important;
         background-image: url(../images/navigation.gif) !important;
-        background-position: 99.6% 0 !important;
+        background-position: 99.6% -1px !important;
         background-size: 1000% !important;
         color: #57BF9E !important; }
       #mobile-nav-wrap .teal span {
@@ -1879,9 +1819,11 @@ header {
       background-color: #496fb5;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
+      backgropund-position: -2px 0 !important;
       color: #496fb5;
       font-weight: bold;
-      font-size: .85em; }
+      font-size: .85em;
+      border: 2px solid #FFF; }
       #mobile-nav-wrap .blue:hover {
         background-color: #496fb5 !important;
         background-size: 1000% !important;
@@ -1897,6 +1839,7 @@ header {
       background-size: 1000% !important;
       color: #44A472;
       font-weight: bold;
+      border: 2px solid #FFF;
       font-size: .85em; }
       #mobile-nav-wrap .green:hover {
         background: #44A472 !important;
@@ -1916,6 +1859,7 @@ header {
       background-size: 1000% !important;
       color: #6F489C;
       font-weight: bold;
+      border: 2px solid #FFF;
       font-size: .85em; }
       #mobile-nav-wrap .purple:hover {
         background-color: #6F489C !important;
@@ -1935,6 +1879,7 @@ header {
       background-size: 1000% !important;
       color: #F59120;
       font-weight: bold;
+      border: 2px solid #FFF;
       font-size: .85em; }
       #mobile-nav-wrap .gold:hover {
         background-color: #F59120 !important;
@@ -1954,6 +1899,7 @@ header {
       background-size: 1000% !important;
       color: #58595B;
       font-weight: bold;
+      border: 2px solid #FFF;
       font-size: .85em; }
       #mobile-nav-wrap .grey:hover {
         background-color: #58595B !important;
@@ -1972,6 +1918,7 @@ header {
       background-position: 83.5% 0 !important;
       background-size: 1000% !important;
       color: #D23A45;
+      border: 2px solid #FFF;
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .red:hover {
@@ -1990,6 +1937,7 @@ header {
       background-size: 1000% !important;
       background-position: 99.6% 0 !important;
       background-size: 1000%;
+      border: 2px solid #FFF;
       color: #57BF9E;
       font-weight: bold;
       font-size: .85em; }
@@ -2059,6 +2007,7 @@ header {
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
     background-position: -4px 0 !important;
+    border: 2px solid #FFF;
     color: #496fb5;
     font-weight: bold; }
     .blue:hover {
@@ -2068,14 +2017,15 @@ header {
       color: #496fb5 !important; }
     .blue span {
       position: absolute;
-      bottom: 2.5em;
-      left: 3.5em; }
+      bottom: 1.1em;
+      left: 4.5em; }
 
   .green {
     background-color: #44A472;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
     background-position: -145px 0 !important;
+    border: 2px solid #FFF;
     color: #44A472;
     font-weight: bold; }
     .green:hover {
@@ -2086,93 +2036,98 @@ header {
       color: #44A472 !important; }
     .green span {
       position: absolute;
-      bottom: 2.5em;
-      left: 11em; }
+      bottom: 1.1em;
+      left: 12.35em; }
 
   .purple {
     background-color: #6F489C;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -287px 0 !important;
+    background-position: -287px -1px !important;
     background-size: 1000% !important;
+    border: 2px solid #FFF;
     color: #6F489C;
     font-weight: bold; }
     .purple:hover {
       background-color: #6F489C !important;
       background-image: url(../images/navigation.gif) !important;
-      background-position: -287px 0 !important;
+      background-position: -287px -1px !important;
       background-size: 1000% !important;
       color: #6F489C !important; }
     .purple span {
       position: absolute;
-      bottom: 2.5em;
-      left: 19em; }
+      bottom: 1.1em;
+      left: 20em; }
 
   .gold {
     background-color: #F59120;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
-    background-position: -427px 0 !important;
+    background-position: -427px -1px !important;
+    border: 2px solid #FFF;
     color: #F59120;
     font-weight: bold; }
     .gold:hover {
       background-color: #F59120 !important;
       background-image: url(../images/navigation.gif) !important;
-      background-position: -427px 0 !important;
+      background-position: -427px -1px !important;
       background-size: 1000% !important;
       color: #F59120 !important; }
     .gold span {
       position: absolute;
-      bottom: 2.5em;
-      left: 27em; }
+      bottom: 1.1em;
+      left: 27.5em; }
 
   .grey {
     background-color: #58595B;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -570px 0 !important;
+    background-position: -570px -1px !important;
     background-size: 1000% !important;
+    border: 2px solid #FFF;
     color: #58595B;
     font-weight: bold; }
     .grey:hover {
       background-color: #58595B !important;
       background-image: url(../images/navigation.gif) !important;
-      background-position: -570px 0 !important;
+      background-position: -570px -1px !important;
       background-size: 1000% !important;
       color: #58595B !important; }
     .grey span {
       position: absolute;
-      bottom: 2.5em;
-      right: 21em; }
+      bottom: 1.1em;
+      right: 20.5em; }
 
   .red {
     background-color: #D23A45;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
-    background-position: -711px 0 !important;
+    background-position: -711px -1px !important;
+    border: 2px solid #FFF;
     color: #D23A45;
     font-weight: bold; }
     .red:hover {
       background-color: #D23A45 !important;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
-      background-position: -711px 0 !important;
+      background-position: -711px -1px !important;
       color: #D23A45 !important; }
     .red span {
       position: absolute;
-      bottom: 2.5em;
-      right: 9.75em; }
+      bottom: 1.1em;
+      right: 11.25em; }
 
   .teal {
     background-color: #57BF9E;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
-    background-position: -852px 0 !important;
+    background-position: -852px -1px !important;
+    border: 2px solid #FFF;
     color: #57BF9E;
     font-weight: bold; }
     .teal:hover {
       background: #57BF9E !important;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
-      background-position: -852px 0 !important;
+      background-position: -852px -1px !important;
       color: #57BF9E !important; }
     .teal span {
       position: absolute;
@@ -2234,21 +2189,25 @@ header {
   .blue {
     background-color: #496fb5;
     background-image: url(../images/navigation.gif) !important;
+    background-position: -2px 0 !important;
     color: #496fb5;
-    font-weight: bold; }
+    font-weight: bold;
+    border: 2px solid #FFF; }
     .blue:hover {
       background-color: #496fb5 !important;
+      background-position: -2px 0 !important;
       color: #496fb5 !important; }
     .blue span {
       position: absolute;
-      bottom: 1em;
-      left: 5em; }
+      bottom: -.5em;
+      left: 6em; }
 
   .green {
     background-color: #44A472;
     background-image: url(../images/navigation.gif) !important;
     background-position: -173px 0 !important;
     color: #44A472;
+    border: 2px solid #FFF;
     font-weight: bold; }
     .green:hover {
       background: #44A472 !important;
@@ -2257,83 +2216,88 @@ header {
       color: #44A472 !important; }
     .green span {
       position: absolute;
-      bottom: 1em;
-      left: 14.75em; }
+      bottom: -.5em;
+      left: 16.15em; }
 
   .purple {
     background-color: #6F489C;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -345px 0 !important;
+    background-position: -346px -1px !important;
     color: #6F489C;
+    border: 2px solid #FFF;
     font-weight: bold; }
     .purple:hover {
       background-color: #6F489C !important;
       background-image: url(../images/navigation.gif) !important;
-      background-position: -345px 0 !important;
+      background-position: -346px -1px !important;
       color: #6F489C !important; }
     .purple span {
       position: absolute;
-      bottom: 1em;
-      left: 25.25em; }
+      bottom: -.5em;
+      left: 26em; }
 
   .gold {
     background-color: #F59120;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -516px 0 !important;
+    background-position: -516px -1px !important;
+    border: 2px solid #FFF;
     color: #F59120;
     font-weight: bold; }
     .gold:hover {
       background-color: #F59120 !important;
       background-image: url(../images/navigation.gif) !important;
-      background-position: -516px 0 !important;
+      background-position: -516px -1px !important;
       color: #F59120 !important; }
     .gold span {
       position: absolute;
-      bottom: 1em;
-      left: 35.4em; }
+      bottom: -.5em;
+      left: 36.3em; }
 
   .grey {
     background-color: #58595B;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -687px 0 !important;
+    background-position: -687px -1px !important;
+    border: 2px solid #FFF;
     color: #58595B;
     font-weight: bold; }
     .grey:hover {
       background-color: #58595B !important;
       background-image: url(../images/navigation.gif) !important;
-      background-position: -687px 0 !important;
+      background-position: -687px -1px !important;
       color: #58595B !important; }
     .grey span {
       position: absolute;
-      bottom: 1em;
-      right: 24.2em; }
+      bottom: -.5em;
+      right: 23.8em; }
 
   .red {
     background-color: #D23A45;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -858px 0 !important;
+    background-position: -858px -1px !important;
+    border: 2px solid #FFF;
     color: #D23A45;
     font-weight: bold; }
     .red:hover {
       background-color: #D23A45 !important;
       background-image: url(../images/navigation.gif) !important;
-      background-position: -858px 0 !important;
+      background-position: -858px -1px !important;
       color: #D23A45 !important; }
     .red span {
       position: absolute;
-      bottom: 1em;
-      right: 10.75em; }
+      bottom: -.5em;
+      right: 12em; }
 
   .teal {
     background-color: #57BF9E;
     background-image: url(../images/navigation.gif) !important;
-    background-position: -1030px 0 !important;
+    background-position: -1030px -1px !important;
+    border: 2px solid #FFF;
     color: #57BF9E;
     font-weight: bold; }
     .teal:hover {
       background: #57BF9E !important;
       background-image: url(../images/navigation.gif) !important;
-      background-position: -1030px 0 !important;
+      background-position: -1030px -1px !important;
       color: #57BF9E !important; }
     .teal span {
       position: absolute;
@@ -2493,7 +2457,7 @@ header {
   /* Images below banner */
   .travelers-wrapper {
     width: 98%;
-    margin: 0 auto 0 1em;
+    margin: 0 auto 0 1.25em;
     padding: 0; }
     .travelers-wrapper h2 {
       font-size: 2em; }
@@ -2523,10 +2487,9 @@ header {
       margin: 0 auto; } }
 @media (min-width: 1200px) {
   .travelers-wrapper .col-sm-12 {
-    width: 30%;
+    width: 31%;
     float: left;
-    padding: 0 .75em;
-    margin: 0 auto; } }
+    padding: 0 .5em; } }
 /*******************************
    Slideshow CSS
 ********************************/
@@ -3014,28 +2977,6 @@ a .button-teal {
       .inline-images .image-mid-wrapper > img {
         margin: 0 auto;
         width: 100%; } }
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Full width images below slideshow */
-  .inline-images {
-    display: block;
-    width: 100%;
-    margin: .5em auto 0 2em;
-    padding: 0; }
-    .inline-images .image-side-wrapper {
-      padding: 0;
-      margin: 0 auto;
-      float: left;
-      width: 21.25%; }
-      .inline-images .image-side-wrapper > img {
-        width: 100%; }
-    .inline-images .image-mid-wrapper {
-      padding: 0;
-      margin: 0 1.05em;
-      float: left;
-      width: 44.5%; }
-      .inline-images .image-mid-wrapper > img {
-        margin: 0 auto;
-        width: 100%; } }
 @media (min-width: 736px) {
   .large-text {
     font-size: 1.25em;
@@ -3071,14 +3012,39 @@ a .button-teal {
       width: 8em;
       position: absolute;
       left: 2em;
-      top: .5em; } }
+      top: .5em; }
+
+  /* Full width images below slideshow */
+  .mobile-images {
+    display: none; }
+
+  .inline-images {
+    display: block;
+    width: 100%;
+    margin: .5em auto 0 1.25em;
+    padding: 0; }
+    .inline-images .image-side-wrapper {
+      padding: 0;
+      margin: 0 auto;
+      float: left;
+      width: 22.25%; }
+      .inline-images .image-side-wrapper > img {
+        width: 100%; }
+    .inline-images .image-mid-wrapper {
+      padding: 0;
+      margin: 0 1.05em;
+      float: left;
+      width: 46.5%; }
+      .inline-images .image-mid-wrapper > img {
+        margin: 0 auto;
+        width: 100%; } }
 /* 992 - 1199 */
 @media (min-width: 992px) and (max-width: 1199px) {
   .travelers-wrapper .col-sm-12 {
     width: 30%;
     float: left;
     padding: .25em;
-    margin-left: .7em; }
+    margin-left: 1em; }
 
   .mobile-images {
     display: none; }
