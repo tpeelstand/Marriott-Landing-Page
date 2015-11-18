@@ -1,4 +1,26 @@
 /** Media Queries for adjustments and all tablet styles **/
+/* HEADER FONT COLORS */
+.blue-font {
+    color: #496fb5;
+}
+.green-font {
+    color: #44A472;
+}
+.purple-font {
+    color: #6F489C;
+}
+.yellow-font {
+    color: #F59120;
+}
+.grey-font {
+    color: #58595B;
+}
+.red-font {
+    color: #D23A45;
+}
+.teal-font {
+    color: #57BF9E;
+}
 
 @media (min-width: 300px) and (max-width: 600px) {
     .travelers-wrapper {
@@ -15,12 +37,13 @@
         width: 92%;
         
         .top-image {
-            width: 99.2%;
+            width: 100%;
             padding: 0;
-            margin-left: .075em;
+            margin-left: 0;
+            margin-top: -.2em;
         }
         .bottom-images {
-            width: 99.65%;
+            width: 100%;
             
             .bottom-right {
                 width: 49.15%;
@@ -58,16 +81,16 @@
     } 
     /* Full width images below slideshow */
     .inline-images {
-            display: block;
-            width: 100%;
-            margin: 1em 0 2em 1.5em;
-            padding: 0; 
+        display: block;
+        width: 100%;
+        margin: 0.5em 0 2em 1.45em;
+        padding: 0; 
         
         .image-side-wrapper {
             padding: 0;
             margin: 0 auto;
             float: left;
-            width: 21.5%;
+            width: 21.51%;
             > img {
                 width: 100%;    
             }
@@ -76,7 +99,7 @@
             padding: 0;
             margin: 0 .7em;
             float: left;
-            width: 44.75%; 
+            width: 44.9%; 
             > img { 
                 margin: 0 auto;
                 width: 100%;   
@@ -337,28 +360,6 @@
             margin-bottom: -.75em;
             margin-right: .5em;    
         }
-    }
-    /* HEADER FONT COLORS */
-    .blue-font {
-        color: #496fb5;
-    }
-    .green-font {
-        color: #44A472;
-    }
-    .purple-font {
-        color: #6F489C;
-    }
-    .yellow-font {
-        color: #F59120;
-    }
-    .grey-font {
-        color: #58595B;
-    }
-    .red-font {
-        color: #D23A45;
-    }
-    .teal-font {
-        color: #57BF9E;
     }
     .message-wrapper-mobile {
         display: none;

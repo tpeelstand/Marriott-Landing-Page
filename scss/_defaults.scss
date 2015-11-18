@@ -82,11 +82,22 @@ a {
     text-align: center;
     margin: 0 auto;
 }
- a img {
+a .side-image,
+a .middle-image {
      width: 100%;
      margin: 0 auto;
      padding: 0;
  }
+.start {
+    color: #1b1b1b;
+    font-size: .75em;
+}
+#utilities-legal {
+    text-align: center;
+}
+#copyright {
+    text-align: center;
+}
 @media (min-width: 300px) and (max-width: 991px) {
     .return {
         display: none;   

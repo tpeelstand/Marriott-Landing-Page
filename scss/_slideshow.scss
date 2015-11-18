@@ -25,8 +25,9 @@
                 .topline {
                     text-transform: uppercase;
                     text-align: center;
+                    font-weight: 600;
                     color: #FFF;
-                    font-size: 45%;
+                    font-size: 55%;
                     margin: 0 auto;
                     padding: 0;
                 }
@@ -35,16 +36,16 @@
                     text-align: center;
                     color: #FFF;
                     font-size: 75%;
-                    margin: 0 auto;
+                    margin: .25em auto 0;
                     padding: 0;
                 }
                 .tagline {
-                    width: 50%;
+                    width: 80%;
                     text-align: center;
                     color: #FFF;
-                    font-size: 45%;
+                    font-size: 55%;
                     margin: 0 auto;
-                    padding: 0;
+                    padding: .5em 0;
                 }
             }
             
@@ -54,7 +55,7 @@
                 max-width: 250px;
                 text-transform: uppercase;
                 text-align: center;
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 45%;
                 padding: 1% 0;
                 border: 0;
@@ -108,36 +109,37 @@
                 .topline {
                     text-transform: uppercase;
                     text-align: center;
+                    font-weight: 600;
                     color: #FFF;
-                    font-size: 55%;
+                    font-size: 65%;
                     margin: 0 auto;
-                    padding: 0;
+                    padding: .5em 0 0 0;
                 }
                 .city {
                     text-transform: uppercase;
                     text-align: center;
                     color: #FFF;
-                    font-size: 85%;
+                    font-size: 100%;
+                    font-weight: 600;
                     margin: 0 auto;
-                    padding: 0;
+                    padding: .5em 0;
                 }
                 .tagline {
-                    width: 55%;
+                    width: 60%;
                     text-align: center;
                     color: #FFF;
-                    font-size: 55%;
+                    font-size: 65%;
                     margin: 0 auto;
-                    padding: 0;
+                    padding: 0 0 .5em 0;
                 }
             }
             
             /* BUTTONS */
             button {
-                min-width: 75px;
-                max-width: 250px;
+                width: 20%;
                 text-transform: uppercase;
                 text-align: center;
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 50%;
                 padding: 1% 0;
                 border: 0;
@@ -191,6 +193,7 @@
                     text-transform: uppercase;
                     text-align: center;
                     color: #FFF;
+                    font-weight: 600;
                     font-size: 1em;
                     margin: 0 auto;
                     padding: 0;
@@ -204,7 +207,7 @@
                     padding: 0;
                 }
                 .tagline {
-                    width: 55%;
+                    width: 60%;
                     text-align: center;
                     color: #FFF;
                     font-size: 1em;
@@ -217,7 +220,7 @@
                 width: 22.5%;
                 text-transform: uppercase;
                 text-align: center;
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 75%;
                 padding: 1em;
                 border: 0;
@@ -272,6 +275,7 @@
                     text-transform: uppercase;
                     text-align: center;
                     color: #FFF;
+                    font-weight: 600;
                     font-size: 1.250em;
                     margin: 0 auto;
                     padding: 0;
@@ -282,13 +286,13 @@
                     color: #FFF;
                     font-size: 2.500em;
                     margin: 0 auto;
-                    padding: 0;
+                    padding: .25em 0
                 }
                 .tagline {
                     width: 55%;
                     text-align: center;
                     color: #FFF;
-                    font-size: 1.250em;
+                    font-size: 100%;
                     margin: 0 auto;
                     padding: 0;
                 }
@@ -298,7 +302,7 @@
                 width: 22.5%;
                 text-transform: uppercase;
                 text-align: center;
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 100%;
                 padding: 1em;
                 border: 0;
@@ -364,6 +368,7 @@
                     text-transform: uppercase;
                     text-align: center;
                     color: #FFF;
+                    font-weight: 600;
                     font-size: 2.500em;
                     margin: 0 auto;
                     padding: 0;
@@ -382,7 +387,7 @@
                 width: 22.5%;
                 text-transform: uppercase;
                 text-align: center;
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 1.125em;
                 padding: 1em;
                 border: 0;
