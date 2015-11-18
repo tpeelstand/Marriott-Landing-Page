@@ -1066,7 +1066,7 @@ th {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: auto}
+  margin: auto; }
 
 .img-rounded {
   border-radius: 0.3rem; }
@@ -1080,7 +1080,8 @@ th {
   transition: all .2s ease-in-out;
   display: inline-block;
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  margin: auto; }
 
 .img-circle {
   border-radius: 50%; }
@@ -1184,11 +1185,15 @@ a img {
     margin-top: 5em;
     margin-right: 8em; }
     .return-mobile .navicon {
-      padding: 0 1em;
-      text-align: center; }
-    .return-mobile a {
-      color: #1b1b1b;
-      font-size: .9em; } }
+      padding: 0 1em; }
+    .return-mobile .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto; }
+      .return-mobile .img-responsive a {
+        color: #1b1b1b;
+        font-size: .9em; } }
 @media (min-width: 992px) {
   h1 {
     font-size: 3.125em;
@@ -1216,7 +1221,13 @@ a img {
       color: #1b1b1b;
       font-size: .9em; }
     .return p {
-      text-align: center; } }
+      text-align: center; }
+
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto; } }
 /*******************************
     Mixins
 ********************************/
@@ -1392,14 +1403,12 @@ header {
     #mobile-nav-wrap #all-mobile:hover ul:hover a:hover {
       opacity: 1; }
     #mobile-nav-wrap .blue {
-      background-color: #496fb5;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000%;
       color: #496fb5;
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .blue:hover {
-        background-color: #496fb5 !important;
         background-size: 1000%;
         color: #496fb5 !important; }
       #mobile-nav-wrap .blue span {
@@ -1407,7 +1416,6 @@ header {
         top: 4.5em;
         left: .85em; }
     #mobile-nav-wrap .green {
-      background-color: #44A472;
       background-image: url(../images/navigation.gif) !important;
       background-position: 17% 0 !important;
       background-size: 1000%;
@@ -1415,7 +1423,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .green:hover {
-        background: #44A472 !important;
         background-image: url(../images/navigation.gif) !important;
         background-size: 1000% !important;
         background-position: 17% 0 !important;
@@ -1425,7 +1432,6 @@ header {
         top: 4.5em;
         left: .75em; }
     #mobile-nav-wrap .purple {
-      background-color: #6F489C;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 33.5% 0 !important;
@@ -1434,7 +1440,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .purple:hover {
-        background-color: #6F489C !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 33.5% 0 !important;
         background-size: 1000% !important;
@@ -1444,7 +1449,6 @@ header {
         top: 4.5em;
         left: .25em; }
     #mobile-nav-wrap .gold {
-      background-color: #F59120;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 50% 0 !important;
@@ -1452,7 +1456,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .gold:hover {
-        background-color: #F59120 !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 50% 0 !important;
         background-size: 1000% !important;
@@ -1462,7 +1465,6 @@ header {
         top: 4.5em;
         left: .25em; }
     #mobile-nav-wrap .grey {
-      background-color: #58595B;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 66.5% 0 !important;
@@ -1471,7 +1473,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .grey:hover {
-        background-color: #58595B !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 66.5% 0 !important;
         color: #58595B !important; }
@@ -1480,7 +1481,6 @@ header {
         top: 4.5em;
         left: -.15em; }
     #mobile-nav-wrap .red {
-      background-color: #D23A45;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 83.5% 0 !important;
@@ -1489,7 +1489,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .red:hover {
-        background-color: #D23A45 !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 83.5% 0 !important;
         color: #D23A45 !important; }
@@ -1498,7 +1497,6 @@ header {
         top: 4.5em;
         left: -1.25em; }
     #mobile-nav-wrap .teal {
-      background-color: #57BF9E;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 99.6% 0 !important;
@@ -1507,7 +1505,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .teal:hover {
-        background: #57BF9E !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 99.6% 0 !important;
         background-size: 1000% !important;
@@ -1603,7 +1600,6 @@ header {
     #mobile-nav-wrap #all-mobile:hover ul:hover a:hover {
       opacity: 1; }
     #mobile-nav-wrap .blue {
-      background-color: #496fb5;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000%;
       border: 2px solid #FFF;
@@ -1611,7 +1607,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .blue:hover {
-        background-color: #496fb5 !important;
         background-size: 1000%;
         color: #496fb5 !important; }
       #mobile-nav-wrap .blue span {
@@ -1619,7 +1614,6 @@ header {
         top: 4.5em;
         left: .85em; }
     #mobile-nav-wrap .green {
-      background-color: #44A472;
       background-image: url(../images/navigation.gif) !important;
       background-position: 17% 0 !important;
       background-size: 1000%;
@@ -1628,7 +1622,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .green:hover {
-        background: #44A472 !important;
         background-image: url(../images/navigation.gif) !important;
         background-size: 1000% !important;
         background-position: 17% 0 !important;
@@ -1638,7 +1631,6 @@ header {
         top: 4.5em;
         left: .75em; }
     #mobile-nav-wrap .purple {
-      background-color: #6F489C;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 33.5% 0 !important;
@@ -1648,7 +1640,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .purple:hover {
-        background-color: #6F489C !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 33.5% 0 !important;
         background-size: 1000%;
@@ -1658,7 +1649,6 @@ header {
         top: 4.5em;
         left: .25em; }
     #mobile-nav-wrap .gold {
-      background-color: #F59120;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 50% -1px !important;
@@ -1668,7 +1658,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .gold:hover {
-        background-color: #F59120 !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 50% -1px !important;
         background-size: 1000% !important;
@@ -1678,7 +1667,6 @@ header {
         top: 4.5em;
         left: .25em; }
     #mobile-nav-wrap .grey {
-      background-color: #58595B;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 66.5% -1px !important;
@@ -1688,7 +1676,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .grey:hover {
-        background-color: #58595B !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 66.5% -1px !important;
         color: #58595B !important; }
@@ -1697,7 +1684,6 @@ header {
         top: 4.5em;
         left: -.15em; }
     #mobile-nav-wrap .red {
-      background-color: #D23A45;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 83.5% -1px !important;
@@ -1707,7 +1693,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .red:hover {
-        background-color: #D23A45 !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 83.5% -1px !important;
         color: #D23A45 !important; }
@@ -1716,7 +1701,6 @@ header {
         top: 4.5em;
         left: -1.25em; }
     #mobile-nav-wrap .teal {
-      background-color: #57BF9E;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 99.6% -1px !important;
@@ -1726,7 +1710,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .teal:hover {
-        background: #57BF9E !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 99.6% -1px !important;
         background-size: 1000% !important;
@@ -1824,7 +1807,6 @@ header {
     #mobile-nav-wrap #all-mobile:hover ul:hover a:hover {
       opacity: 1; }
     #mobile-nav-wrap .blue {
-      background-color: #496fb5;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       backgropund-position: -2px 0 !important;
@@ -1833,7 +1815,6 @@ header {
       font-size: .85em;
       border: 2px solid #FFF; }
       #mobile-nav-wrap .blue:hover {
-        background-color: #496fb5 !important;
         background-size: 1000% !important;
         color: #496fb5 !important; }
       #mobile-nav-wrap .blue span {
@@ -1841,7 +1822,6 @@ header {
         top: 4.5em;
         left: .85em; }
     #mobile-nav-wrap .green {
-      background-color: #44A472;
       background-image: url(../images/navigation.gif) !important;
       background-position: 17% 0 !important;
       background-size: 1000% !important;
@@ -1850,7 +1830,6 @@ header {
       border: 2px solid #FFF;
       font-size: .85em; }
       #mobile-nav-wrap .green:hover {
-        background: #44A472 !important;
         background-image: url(../images/navigation.gif) !important;
         background-size: 1000% !important;
         background-position: 17% 0 !important;
@@ -1860,7 +1839,6 @@ header {
         top: 4.5em;
         left: .75em; }
     #mobile-nav-wrap .purple {
-      background-color: #6F489C;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 33.5% 0 !important;
@@ -1870,7 +1848,6 @@ header {
       border: 2px solid #FFF;
       font-size: .85em; }
       #mobile-nav-wrap .purple:hover {
-        background-color: #6F489C !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 33.5% 0 !important;
         background-size: 1000% !important;
@@ -1880,7 +1857,6 @@ header {
         top: 4.5em;
         left: .25em; }
     #mobile-nav-wrap .gold {
-      background-color: #F59120;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 50% 0 !important;
@@ -1890,7 +1866,6 @@ header {
       border: 2px solid #FFF;
       font-size: .85em; }
       #mobile-nav-wrap .gold:hover {
-        background-color: #F59120 !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 50% 0 !important;
         background-size: 1000% !important;
@@ -1900,7 +1875,6 @@ header {
         top: 4.5em;
         left: .25em; }
     #mobile-nav-wrap .grey {
-      background-color: #58595B;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 66.5% 0 !important;
@@ -1910,7 +1884,6 @@ header {
       border: 2px solid #FFF;
       font-size: .85em; }
       #mobile-nav-wrap .grey:hover {
-        background-color: #58595B !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 66.5% 0 !important;
         background-size: 1000% !important;
@@ -1920,7 +1893,6 @@ header {
         top: 4.5em;
         left: -.15em; }
     #mobile-nav-wrap .red {
-      background-color: #D23A45;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 83.5% 0 !important;
@@ -1930,7 +1902,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .red:hover {
-        background-color: #D23A45 !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 83.5% 0 !important;
         background-size: 1000% !important;
@@ -1940,7 +1911,6 @@ header {
         top: 4.5em;
         left: -1.25em; }
     #mobile-nav-wrap .teal {
-      background-color: #57BF9E;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: 99.6% 0 !important;
@@ -1950,7 +1920,6 @@ header {
       font-weight: bold;
       font-size: .85em; }
       #mobile-nav-wrap .teal:hover {
-        background: #57BF9E !important;
         background-image: url(../images/navigation.gif) !important;
         background-position: 99.6% 0 !important;
         background-size: 1000% !important;
@@ -2011,7 +1980,6 @@ header {
 
   /* Circle Colors */
   .blue {
-    background-color: #496fb5;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
     background-position: -4px 0 !important;
@@ -2019,7 +1987,6 @@ header {
     color: #496fb5;
     font-weight: bold; }
     .blue:hover {
-      background-color: #496fb5 !important;
       background-size: 1000% !important;
       background-position: -4px 0 !important;
       color: #496fb5 !important; }
@@ -2029,7 +1996,6 @@ header {
       left: 4.5em; }
 
   .green {
-    background-color: #44A472;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
     background-position: -145px 0 !important;
@@ -2037,7 +2003,6 @@ header {
     color: #44A472;
     font-weight: bold; }
     .green:hover {
-      background: #44A472 !important;
       background-image: url(../images/navigation.gif) !important;
       background-position: -145px 0 !important;
       background-size: 1000% !important;
@@ -2067,7 +2032,6 @@ header {
       left: 20em; }
 
   .gold {
-    background-color: #F59120;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
     background-position: -427px -1px !important;
@@ -2075,7 +2039,6 @@ header {
     color: #F59120;
     font-weight: bold; }
     .gold:hover {
-      background-color: #F59120 !important;
       background-image: url(../images/navigation.gif) !important;
       background-position: -427px -1px !important;
       background-size: 1000% !important;
@@ -2086,7 +2049,6 @@ header {
       left: 27.5em; }
 
   .grey {
-    background-color: #58595B;
     background-image: url(../images/navigation.gif) !important;
     background-position: -570px -1px !important;
     background-size: 1000% !important;
@@ -2094,7 +2056,6 @@ header {
     color: #58595B;
     font-weight: bold; }
     .grey:hover {
-      background-color: #58595B !important;
       background-image: url(../images/navigation.gif) !important;
       background-position: -570px -1px !important;
       background-size: 1000% !important;
@@ -2105,7 +2066,6 @@ header {
       right: 20.5em; }
 
   .red {
-    background-color: #D23A45;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
     background-position: -711px -1px !important;
@@ -2113,7 +2073,6 @@ header {
     color: #D23A45;
     font-weight: bold; }
     .red:hover {
-      background-color: #D23A45 !important;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: -711px -1px !important;
@@ -2124,7 +2083,6 @@ header {
       right: 11.25em; }
 
   .teal {
-    background-color: #57BF9E;
     background-image: url(../images/navigation.gif) !important;
     background-size: 1000% !important;
     background-position: -852px -1px !important;
@@ -2132,7 +2090,6 @@ header {
     color: #57BF9E;
     font-weight: bold; }
     .teal:hover {
-      background: #57BF9E !important;
       background-image: url(../images/navigation.gif) !important;
       background-size: 1000% !important;
       background-position: -852px -1px !important;
@@ -2195,14 +2152,12 @@ header {
 
   /* Circle Colors */
   .blue {
-    background-color: #496fb5;
     background-image: url(../images/navigation.gif) !important;
     background-position: -2px 0 !important;
     color: #496fb5;
     font-weight: bold;
     border: 2px solid #FFF; }
     .blue:hover {
-      background-color: #496fb5 !important;
       background-position: -2px 0 !important;
       color: #496fb5 !important; }
     .blue span {
@@ -2211,14 +2166,12 @@ header {
       left: 6em; }
 
   .green {
-    background-color: #44A472;
     background-image: url(../images/navigation.gif) !important;
     background-position: -173px 0 !important;
     color: #44A472;
     border: 2px solid #FFF;
     font-weight: bold; }
     .green:hover {
-      background: #44A472 !important;
       background-image: url(../images/navigation.gif) !important;
       background-position: -173px 0 !important;
       color: #44A472 !important; }
@@ -2228,14 +2181,12 @@ header {
       left: 16.15em; }
 
   .purple {
-    background-color: #6F489C;
     background-image: url(../images/navigation.gif) !important;
     background-position: -346px -1px !important;
     color: #6F489C;
     border: 2px solid #FFF;
     font-weight: bold; }
     .purple:hover {
-      background-color: #6F489C !important;
       background-image: url(../images/navigation.gif) !important;
       background-position: -346px -1px !important;
       color: #6F489C !important; }
@@ -2245,14 +2196,12 @@ header {
       left: 26em; }
 
   .gold {
-    background-color: #F59120;
     background-image: url(../images/navigation.gif) !important;
     background-position: -516px -1px !important;
     border: 2px solid #FFF;
     color: #F59120;
     font-weight: bold; }
     .gold:hover {
-      background-color: #F59120 !important;
       background-image: url(../images/navigation.gif) !important;
       background-position: -516px -1px !important;
       color: #F59120 !important; }
@@ -2262,14 +2211,12 @@ header {
       left: 36.3em; }
 
   .grey {
-    background-color: #58595B;
     background-image: url(../images/navigation.gif) !important;
     background-position: -687px -1px !important;
     border: 2px solid #FFF;
     color: #58595B;
     font-weight: bold; }
     .grey:hover {
-      background-color: #58595B !important;
       background-image: url(../images/navigation.gif) !important;
       background-position: -687px -1px !important;
       color: #58595B !important; }
@@ -2279,14 +2226,12 @@ header {
       right: 23.8em; }
 
   .red {
-    background-color: #D23A45;
     background-image: url(../images/navigation.gif) !important;
     background-position: -858px -1px !important;
     border: 2px solid #FFF;
     color: #D23A45;
     font-weight: bold; }
     .red:hover {
-      background-color: #D23A45 !important;
       background-image: url(../images/navigation.gif) !important;
       background-position: -858px -1px !important;
       color: #D23A45 !important; }
