@@ -1098,7 +1098,10 @@ body {
   width: 100%;
   color: #1b1b1b;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-weight: 400; }
+
+p, span, li, a {
+  font-weight: 400; }
 
 .wrapper {
   min-height: 100%;
@@ -2973,7 +2976,7 @@ a .button-teal {
   .inline-images {
     display: block;
     width: 100%;
-    margin: .5em auto 0 1.25em;
+    margin: 1em auto 0 1.25em;
     padding: 0; }
     .inline-images .image-side-wrapper {
       padding: 0;
@@ -3005,7 +3008,7 @@ a .button-teal {
   .inline-images {
     display: block;
     width: 100%;
-    margin: .5em auto 0 1.5em;
+    margin: 1em auto 0 1.5em;
     padding: 0; }
     .inline-images .image-side-wrapper {
       padding: 0;
@@ -3143,7 +3146,7 @@ a .button-teal {
   .inline-images {
     display: block;
     width: 100%;
-    margin: .5em auto 0 2em;
+    margin: 1em auto 0 2em;
     padding: 0; }
     .inline-images .image-side-wrapper {
       padding: 0;

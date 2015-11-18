@@ -7,8 +7,11 @@ body {
     width: 100%;
     color: #1b1b1b;
     font-family: $font;
-    font-weight: 300;
+    font-weight: 400;
     
+}
+p,span, li, a {
+    font-weight: 400;
 }
 .wrapper {
 	min-height:100%;
