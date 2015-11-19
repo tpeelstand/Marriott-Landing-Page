@@ -13,6 +13,13 @@ body {
 p,span, li, a {
     font-weight: 400;
 }
+
+sup {
+    font-size: 50%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;   
+}
 .wrapper {
 	min-height:100%;
     width: 100%;
@@ -53,6 +60,13 @@ h3 {
 }
 a {
     text-decoration: none;
+    
+    &:active {
+        color: #1b1b1b;   
+    }
+    &:focus {
+        color: #1b1b1b;   
+    }
 }
 /* HEADER FONT COLORS */
 .blue-font a {
@@ -91,6 +105,7 @@ a .middle-image {
 .start {
     color: #1b1b1b;
     font-size: .75em;
+    padding-bottom: 1.400em;
 }
 #utilities-legal {
     text-align: center;
@@ -110,7 +125,7 @@ a .middle-image {
         margin-right: 8em;
         
         .navicon {
-            padding: 0 1em;
+            padding: 1.5em 1em 0 1em;
         }
         
         .img-responsive {
@@ -156,7 +171,8 @@ a .middle-image {
             font-size: .9em;    
         }
         p {
-            text-align: center;   
+            text-align: center;
+            padding: 1.5em 0 0 0;
         }
     }
     
